@@ -1,3 +1,9 @@
+.background {
+  background-Image: url("Site_Assets/space.png");
+  height: 100vh;
+  width: 100%;
+}
+
 .App {
   text-align: center;
 }
