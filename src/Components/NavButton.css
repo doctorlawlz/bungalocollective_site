@@ -11,6 +11,7 @@
 	flex-basis: 25%;
 }
 
+/* Inner container for centering */
 .content {
 	/* background: #06c; */
 	position:absolute; 

@@ -6,6 +6,7 @@
   width: 100%;
 }
 
+/* Resizing window will resize class from center */
 .center-pivot {
   width: 100%;
   position: absolute;
@@ -15,6 +16,7 @@
   transform: translate(-50%, -50%);
 }
 
+/* Centers earth video */
 .earth-video {
   position: absolute;
   left: 50%;
@@ -23,25 +25,18 @@
   transform: translate(-50%, -50%);
 }
 
+/* Container w/size of device screen */
 .home-container {
   height: 100vh;
   width: 100%;
 }
 
+/* NavButton grid */
 .flex-grid {
 	display: flex;
   justify-content: space-between;
   padding: 5% 7%;
   /* padding: calc(50px + 1.5625vh) calc(8px + 1.5625vw); */
-
-
-}
-
-
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
 /* @media (prefers-reduced-motion: no-preference) {
@@ -49,14 +44,3 @@
     animation: App-logo-spin infinite 20s linear;
   }
 } */
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
