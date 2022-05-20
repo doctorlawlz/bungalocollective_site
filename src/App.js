@@ -4,10 +4,12 @@ import spinningBrick from "./Site_Assets/Spinning_Brick.webm"
 
 const App = () => {
   return (
-    <div className="background">
+ 
+    <React.Fragment>
+    <div className="background"></div>
       <video src={spinningBrick} width="600" height="300" controls="controls" autoplay="true" />
-    </div>
-  );
+    <NavButton label="BRICK BY BRICK" />
+  </React.Fragment>  );
 }
 
 export default App;
