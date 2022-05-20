@@ -1,4 +1,6 @@
 .background {
+  z-index: -1;
+  position: absolute;
   background-Image: url("Site_Assets/space.png");
   height: 100vh;
   width: 100%;
