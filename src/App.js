@@ -7,12 +7,8 @@ const App = () => {
   return (
     <React.Fragment>
 
-      <div className="background"></div>
-
-      <div className='home-container'>
-
-        <video className='earth-video' src={spinningBrick} width="600" height="300" controls="controls" autoplay="true" />
-
+      <div className='home-container background'>
+        <video className='earth-video' src={spinningBrick} loop="true" autoPlay muted/>
         <div className='center-pivot'>
           <div className="flex-grid">
             <NavButton label="BRICK BY BRICK" />
@@ -27,6 +23,7 @@ const App = () => {
       </div>
 
     </React.Fragment>  
+    
   );
 }
 
