@@ -6,9 +6,38 @@
   width: 100%;
 }
 
-.App {
-  text-align: center;
+.center-pivot {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
+.earth-video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.home-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.flex-grid {
+	display: flex;
+  justify-content: space-between;
+  padding: 5% 7%;
+  /* padding: calc(50px + 1.5625vh) calc(8px + 1.5625vw); */
+
+
+}
+
+
 
 .App-logo {
   height: 40vmin;

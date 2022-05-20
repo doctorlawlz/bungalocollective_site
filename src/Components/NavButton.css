@@ -1,0 +1,38 @@
+.container {
+	/* background: #ffbd17; */
+	position: relative;
+	color: white;
+	width: 30vmin;
+	height: 30vmin;
+}
+
+/* Columns for Flex Grid */
+.col {
+	flex-basis: 25%;
+}
+
+.content {
+	/* background: #06c; */
+	position:absolute; 
+	top:25%; 
+	height:10em; 
+	/* margin-top:-5em; */
+	margin: auto;
+}
+
+.brick {
+	position: relative;
+	display: block;
+	margin: auto;
+	width: 60%;
+}
+
+p {
+	position: relative;
+	top: -10%;
+	display: block;
+	font-size: 1.3em;
+	color: "white";
+	text-align: center;
+}
+
