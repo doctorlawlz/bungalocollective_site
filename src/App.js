@@ -8,9 +8,7 @@ const App = () => {
   return (
     <React.Fragment>
 
-      <div className='background'></div>
-
-      <div className='home-container'>
+      <div className='home-container background'>
         
         <img src={logo} className='logo'></img>
         <video className='earth-video' src={spinningBrick} loop={true} autoPlay muted/>
