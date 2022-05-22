@@ -1,0 +1,25 @@
+.bbbcover {
+    display: block;
+    margin: auto;
+    padding-top: 4.5%;
+    width: 40%;
+    height: 40%;
+    opacity: 0.4;
+}
+.cover-container {
+    margin: auto;
+    text-align: center
+}
+.coming-soon {
+    position: relative;
+    font-size: 3vw;
+    width: 100%;
+    left: 0px;
+}
+
+.presave {
+    position: relative;
+    font-size: 2vw;
+    width: 100%;
+    left: 0px;
+}
