@@ -1,0 +1,90 @@
+.fa-style {
+	color: white;
+	font-size: 8vw; 
+}
+/* svg {
+	color: red;
+} */
+
+/* .fa-spotify {
+	
+}
+.fa-itunes-note {
+
+}
+.fa-youtube {
+
+}
+.fa-soundcloud {
+	font-size: .1em;
+} */
+
+.grid {
+	grid-template-columns: auto auto;
+	justify-content: center;
+	gap: 28% 18%;
+	align-items: center;
+	justify-items: center;
+	padding: 0%;
+
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.coverContainer {
+	width: 30%;
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+.main-image {
+	z-index: -1;
+	width: 30%;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	/* max-width: 100%;
+	height: auto; */
+}
+
+/* h1 {
+	color: white;
+} */
+.coverContainer > h1 {
+	font-size: 2.5vw;
+	top: 22%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	position: absolute;
+	color: white;
+}
+
+.coverContainer > h2 {
+	font-family: Conthrax;
+	font-size: 1.5vw;
+	top: 85%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	position: absolute;
+	color: white;
+}

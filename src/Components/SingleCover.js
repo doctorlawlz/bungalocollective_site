@@ -38,7 +38,7 @@ export default class SingleCover extends Component {
 
 	return (
 		<>
-			<img className='grid-item' src={coverSrc}></img>
+			<img className={this.props.cname} src={coverSrc}></img>
 		</>
 	)
   }
