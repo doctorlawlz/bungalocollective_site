@@ -1,20 +1,12 @@
 .bbbcover {
     display: block;
     margin: auto;
-    padding-top: 4.5%;
-    width: 40%;
-    height: 40%;
-    opacity: 0.4;
+    padding-top: 3.5%;
+    height: 50vh;
 }
 .cover-container {
     margin: auto;
     text-align: center
-}
-.coming-soon {
-    position: relative;
-    font-size: 3vw;
-    width: 100%;
-    left: 0px;
 }
 
 .presave {
@@ -23,3 +15,22 @@
     width: 100%;
     left: 0px;
 }
+
+/*------------------MEDIA ADJUSTMENTS-------------*/
+
+@media (max-width: 991px) {
+    .presave {
+        font-size: 5vw;
+    }
+    .bbbcover {
+        height: 40%;
+        width: 65%;
+    }
+}
+/*
+@media (max-width: 767px) {
+    .presave {
+        font-size: 5vw;
+    }
+}
+*/

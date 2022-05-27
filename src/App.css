@@ -4,6 +4,7 @@
   width: 100%;
   /* position: absolute;
   top: 5%; */
+  overflow: hidden;
 }
 
 .background {
@@ -12,8 +13,21 @@
   background-Image: url("Site_Assets/space.png");
   height: 100vh;
   width: 100%;
+  background-size: 75vh;
+  /*
+  animation: slide 5s linear infinite;
+  */
 }
-
+/*
+@keyframes slide {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -100vh;
+  }
+}
+*/
 .logo {
   display: block;
   margin: auto;
