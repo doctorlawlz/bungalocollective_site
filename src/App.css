@@ -70,3 +70,15 @@
     animation: App-logo-spin infinite 20s linear;
   }
 } */
+
+@media (max-width: 991px) {
+  .logo {
+      width: 45%;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo {
+    width: 75%;
+  } 
+}

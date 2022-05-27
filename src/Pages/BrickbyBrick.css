@@ -27,10 +27,33 @@
         width: 65%;
     }
 }
-/*
+
 @media (max-width: 767px) {
-    .presave {
-        font-size: 5vw;
+    .bbbcover {
+        height: 40%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        transform: translate(-50%, -50%);
+    }
+
+    .presave-container {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
     }
 }
-*/
+
+@media (max-width: 420px) {
+    .presave {
+        font-size: 7vw;
+    }
+    
+    .bbbcover {
+        width: 90%;
+        height: auto;
+    }
+}
