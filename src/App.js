@@ -9,15 +9,14 @@ const App = () => {
   return (
     <>
 
-      <div className='home-container background'>
-        
-        <img src={logo} className='logo'></img>
-        {/* <Home /> */}
-        <Music />
-        {/* <BrickbyBrick /> */}
-
+      <div className='global-container'> 
+        <div className='background'></div>
+          
+          <img src={logo} className='logo'></img>
+          { <Home /> }
+          {/* <Music /> */}
+          {/* <BrickbyBrick /> */}
       </div>
-
     </>  
     
   );

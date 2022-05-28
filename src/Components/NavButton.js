@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import brickIcon from "../Site_Assets/PNGS/Brick_icon.png"
 import './NavButton.css'
 
 export default class NavButton extends Component {
@@ -9,7 +8,7 @@ export default class NavButton extends Component {
 	return (
 	  <div className='container col'>
 		  <div className='content'>
-			<img src={brickIcon} className='brick'></img>
+			<img src={this.props.icon} className='brick'></img>
 			<p className='text'>
 				{this.props.label}
 			</p>
@@ -20,5 +19,6 @@ export default class NavButton extends Component {
 }
 
 NavButton.propTypes = {
-	label: PropTypes.string
+	label: PropTypes.string,
+	icon: PropTypes.string,
 };

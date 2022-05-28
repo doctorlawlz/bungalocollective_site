@@ -1,10 +1,10 @@
 /* Container w/size of device screen */
-.home-container {
+.global-container {
   height: 100vh;
   width: 100%;
   /* position: absolute;
   top: 5%; */
-  overflow: hidden;
+  overflow: overlay;
 }
 
 .background {
@@ -14,6 +14,7 @@
   height: 100vh;
   width: 100%;
   background-size: 75vh;
+  background-attachment: fixed;
   /*
   animation: slide 5s linear infinite;
   */
@@ -35,41 +36,6 @@
   padding: 2% 0 
 }
 
-/* Resizing window will resize class from center */
-.center-pivot {
-  width: 90%;
-  height: fit-content;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-/* Centers earth video */
-.earth-video {
-  position: absolute;
-  left: 50%;
-  top: 52%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 60%;
-  height: 60%;
-}
-
-/* NavButton grid */
-.flex-grid {
-	display: flex;
-  justify-content: space-between;
-  padding: 8% 7% 1%; 
-  /* padding: calc(50px + 1.5625vh) calc(8px + 1.5625vw); */
-}
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
 
 @media (max-width: 991px) {
   .logo {

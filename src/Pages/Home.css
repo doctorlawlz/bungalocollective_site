@@ -1,0 +1,105 @@
+/*
+.home-container {
+
+}
+*/
+
+/* Resizing window will resize class from center */
+.center-pivot {
+    width: 90%;
+    height: fit-content;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Centers earth video */
+  .earth-video {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+  }
+  
+  /* NavButton grid */
+  .flex-grid {
+      display: flex;
+    justify-content: space-between;
+    padding: 8% 7% 1%; 
+    /* padding: calc(50px + 1.5625vh) calc(8px + 1.5625vw); */
+  }
+  
+  /* @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  } */
+  
+  /*------------------MEDIA ADJUSTMENTS-------------*/
+
+@media (max-width: 991px) {
+    .earth-video {
+        width: 35%;
+    }
+
+    .brick {
+        width: 85%;
+    }
+}
+
+@media (max-width: 767px) {
+    .earth-video {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        position: relative; 
+        left: auto; 
+        top: auto; 
+        transform: none;
+    }
+
+    .center-pivot {
+        width: 100%;
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+    }
+
+    .flex-grid {
+        display: block;
+        justify-content: center;
+        padding: unset;
+    }
+
+    .container {
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        height: auto;
+    }
+
+    .content {
+        position: relative;
+        height: unset;
+    }
+
+    .brick {
+        width: 65%;
+    }
+}
+
+/*
+@media (max-width: 420px) {
+   
+}
+*/
