@@ -39,7 +39,7 @@ export default class SingleCover extends Component {
 			this.props.fullRes ? coverSrc = TBasicFullRes : coverSrc = TBasic;
 			break;
 		case 'Fly':
-			this.props.fullRes ? coverSrc = FlyFullRes : coverSrc = Fly;		
+			this.props.fullRes ? coverSrc = FlyFullRes : coverSrc = Fly;
 			break;
 		default:
 			break;

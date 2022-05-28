@@ -61,7 +61,7 @@
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	.grid {
 		grid-template-columns: auto;
 		gap: 2% 0%;

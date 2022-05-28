@@ -86,7 +86,7 @@ h2 {
 	font-family: Conthrax;
 	font-size: 1.5vw;
 	margin-top: 8%;
-    left: 70%;
+    left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -94,4 +94,44 @@ h2 {
     transform: translate(-50%, -50%);
 	position: relative;
 	color: white;
+}
+
+@media (max-width: 1370px) {
+	.fa-style {
+		font-size: 12vw;
+	}
+	
+	.coverContainer {
+		width: 50%;
+	}
+
+	.hide > h1 {
+		font-size: 4vw;
+	}
+
+	h2 {
+		font-size: 2.25vw;
+	}
+}
+
+@media (max-width: 991px) {
+	.fa-style {
+		font-size: 16vw;
+	}
+	
+	.coverContainer {
+		width: 65%;
+	}
+
+	.hide > h1 {
+		font-size: 5vw;
+	}
+
+	h2 {
+		font-size: 3vw;
+	}
+}
+
+@media (max-width: 768px) {
+
 }
