@@ -16,13 +16,38 @@
 }
 
 .modal-container {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	background: rgba(0, 0, 0, .80)
+	background: rgba(0, 0, 0, .80);
+	animation: .5s ease-out 0s 1 fadeInUp;
+	overflow: hidden;
 }
+
+/* Standard syntax */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Standard syntax */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 /* @media (min-width: 600px) {
 .cards { grid-template-columns: repeat(2, 1fr); }
