@@ -4,14 +4,16 @@ import logo from './Site_Assets/PNGS/White_Logo.png';
 import Home from './Pages/Home';
 import Music from './Pages/Music';
 import BrickbyBrick from './Pages/BrickbyBrick'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 const App = () => {
   return (
     <>
       <Router>
         <div className='background'></div>
-        <img src={logo} className='logo'></img>
+        <Link to="/">
+          <img src={logo} className='logo'></img>
+        </Link>
         
         {/* { <Home /> } */}
         <Routes>
