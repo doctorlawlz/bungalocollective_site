@@ -1,6 +1,17 @@
 .fa-style {
-	color: white;
 	font-size: 8vw; 
+}
+
+.fa-link-container {
+	transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+	transition-timing-function: linear;
+}
+
+.fa-link-container:hover {
+	color: white !important;
+	
 }
 
 .grid-modal {
@@ -39,7 +50,7 @@
 
 /* Hover effects */
 .coverContainer:hover .main-image {
-	filter: brightness(40%);
+	filter: brightness(40%) blur(2px);
 }
 
 .coverContainer:hover .hide {

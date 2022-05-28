@@ -25,13 +25,14 @@
   margin: auto;
   width: 22%;
   padding: 2% 0; 
+  transition: 0.2s;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+	transition-timing-function: linear;
 }
 
 .logo:hover {
   filter: invert(72%) sepia(52%) saturate(1312%) hue-rotate(337deg) brightness(300%) contrast(101%);
-  transition-duration: 100ms;
-  -moz-transition-duration: 100ms;
-  -webkit-transition-duration: 100ms;
 }
 
 @media (max-width: 991px) {
