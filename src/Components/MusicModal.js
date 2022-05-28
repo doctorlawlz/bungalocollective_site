@@ -17,7 +17,7 @@ export default class MusicModal extends Component {
 		<>
 			<div className='coverContainer'>
 
-				<SingleCover cname='main-image' cover={this.props.clickedCover} />
+				<SingleCover cname='main-image' cover={this.props.clickedCover} fullRes={true}/>
 				
 				<div className='hide'>
 

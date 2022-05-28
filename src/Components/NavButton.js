@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import './NavButton.css'
-import brickIcon from "../Site_Assets/PNGS/Brick_icon.png"
-import brickIconComingSoon from "../Site_Assets/PNGS/Brick_icon_coming_soon.png"
+import brickIcon from "../Site_Assets/PNGS/Brick_icon_small.png"
+import brickIconComingSoon from "../Site_Assets/PNGS/Brick_icon_coming_soon_small.png"
 import { Link } from 'react-router-dom';
 
 export default class NavButton extends Component {

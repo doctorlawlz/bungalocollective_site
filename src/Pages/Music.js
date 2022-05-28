@@ -53,37 +53,37 @@ const Music = () => {
         <div className='grid'>
           <a onClick={() => { 
             setOpenModal(true); 
-            updateModalProps('2020', '2020', '11/11/11')
+            updateModalProps('2020', '2020', '05/01/20')
           }}>
               <SingleCover cname='grid-item' cover='2020'/></a>
           
           <a onClick={() => { 
             setOpenModal(true); setOpenModal(true); 
-            updateModalProps('Heatstroke', 'Heatstroke', '11/11/11')
+            updateModalProps('Heatstroke', 'Heatstroke', '12/21/20')
           }}>
               <SingleCover cname='grid-item' cover='Heatstroke'/></a>
           
           <a onClick={() => { 
             setOpenModal(true); setOpenModal(true); 
-            updateModalProps('Closer', 'Closer', '11/11/11')
+            updateModalProps('Closer', 'Closer', '09/18/20')
           }}>
               <SingleCover cname='grid-item' cover='Closer'/></a>
           
           <a onClick={() => { 
             setOpenModal(true); setOpenModal(true); 
-            updateModalProps('Water is Wet', 'WaterisWet', '11/11/11')
+            updateModalProps('Water is Wet', 'WaterisWet', '12/21/20')
           }}>
               <SingleCover cname='grid-item' cover='WaterisWet'/></a>
           
           <a onClick={() => { 
             setOpenModal(true); setOpenModal(true); 
-            updateModalProps('2 Basic', '2Basic', '11/11/11')
+            updateModalProps('2 Basic', '2Basic', '01/31/21')
           }}>
               <SingleCover cname='grid-item' cover='2Basic'/></a>
           
           <a onClick={() => { 
             setOpenModal(true); setOpenModal(true); 
-            updateModalProps('Fly', 'Fly', '11/11/11')
+            updateModalProps('Fly', 'Fly', '02/14/21')
           }}>
               <SingleCover cname='grid-item' cover='Fly'/></a>
         </div>
