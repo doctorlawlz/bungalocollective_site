@@ -8,15 +8,12 @@ import BrickbyBrick from './Pages/BrickbyBrick'
 const App = () => {
   return (
     <>
-
-      <div className='global-container'> 
-        <div className='background'></div>
-          
-          <img src={logo} className='logo'></img>
-          { <Home /> }
-          {/* <Music /> */}
-          {/* <BrickbyBrick /> */}
-      </div>
+      <div className='background'></div>
+        
+        <img src={logo} className='logo'></img>
+        {/* { <Home /> } */}
+        {/* <Music /> */}
+        <BrickbyBrick />
     </>  
     
   );

@@ -57,8 +57,16 @@
     transform: translate(-50%, -50%);
 	/* max-width: 100%;
 	height: auto; */
+
+	transition: 0.3s;
 }
 
+.main-image:hover {
+	opacity: .5;
+}
+.hide {
+	display: none;
+}
 /* h1 {
 	color: white;
 } */
