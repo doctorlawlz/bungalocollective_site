@@ -1,9 +1,15 @@
 import React from 'react';
 import './BrickbyBrick.css';
 import bbbcover from '../Site_Assets/coming_soon.jpg'  
+import { motion } from 'framer-motion';
+
 const BrickbyBrick = () => {
   return (
-    <div>
+    <motion.div
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}
+    >
         <div className='cover-container'>
           <div className='presave-container'>
             <a className='presave' href='https://distrokid.com/hyperfollow/bungalo/brick-by-brick'>
@@ -13,7 +19,7 @@ const BrickbyBrick = () => {
           <img src={bbbcover} className='bbbcover'></img>
         </div>
         
-    </div>
+    </motion.div>
   );
 };
   

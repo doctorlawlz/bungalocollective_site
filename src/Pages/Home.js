@@ -1,13 +1,20 @@
 import React from 'react';
 import NavButton from '../Components/NavButton';
-import spinningBrick from '../Site_Assets/Spinning_Brick.webm'
+import spinningBrick from '../Site_Assets/Spinning_Brick.webm';
 import './Home.css';
+import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
     <React.Fragment>
 
-      <div className='home-container'>
+      <motion.div 
+        className='home-container'
+
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}
+      >
 
         <video className='earth-video' src={spinningBrick} loop={true} autoPlay muted/>
           <div className='center-pivot'>
@@ -21,7 +28,7 @@ const Home = () => {
             </div>
           </div>
 
-      </div>
+      </motion.div>
 
     </React.Fragment> 
   );
