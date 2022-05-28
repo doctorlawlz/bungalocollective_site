@@ -36,3 +36,10 @@ p {
 	color: "white";
 	text-align: center;
 }
+
+.text:hover {
+	color: #ff9e2f;
+    transition-duration: 100ms;
+    -moz-transition-duration: 100ms;
+    -webkit-transition-duration: 100ms;
+}
