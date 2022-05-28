@@ -15,28 +15,23 @@ export default class MusicModal extends Component {
 
 	return (
 		<>
-			<div className='modalBackground'>
-				<div className='modalContainer'>
-					
-					<div className='coverContainer'>
+			<div className='coverContainer'>
 
-						<SingleCover cname='main-image' cover={this.props.clickedCover} />
-						
-						<div className='hide'>
+				<SingleCover cname='main-image' cover={this.props.clickedCover} />
+				
+				<div className='hide'>
 
-							<h1>{this.props.title}</h1>
-							<div className='grid-modal fa-style'>
-								<FontAwesomeIcon icon={faSpotify} />
-								<FontAwesomeIcon icon={faItunesNote} />
-								<FontAwesomeIcon icon={faYoutube} />
-								<FontAwesomeIcon icon={faSoundcloud} />
-							</div> 
+					<h1>{this.props.title}</h1>
+					<div className='grid-modal fa-style'>
+						<FontAwesomeIcon icon={faSpotify} />
+						<FontAwesomeIcon icon={faItunesNote} />
+						<FontAwesomeIcon icon={faYoutube} />
+						<FontAwesomeIcon icon={faSoundcloud} />
+					</div> 
 
-						</div>
-						<h2>RELEASED: {this.props.released}</h2>
-						
-					</div>
 				</div>
+				<h2>RELEASED: {this.props.released}</h2>
+				
 			</div>
 		</>
 	)
