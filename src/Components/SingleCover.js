@@ -16,6 +16,12 @@ import WaterisWetFullRes from '../Site_Assets/Single_Album_Arts/WaterIsWet_full_
 import TBasicFullRes from '../Site_Assets/Single_Album_Arts/2_Basic_full_res.jpg'
 import FlyFullRes from '../Site_Assets/Single_Album_Arts/Fly_full_res.png'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSpotify } from '@fortawesome/free-brands-svg-icons'
+import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faItunesNote } from '@fortawesome/free-brands-svg-icons'
+import { faSoundcloud } from '@fortawesome/free-brands-svg-icons'
+
 export default class SingleCover extends Component {
 
   render() {
@@ -45,9 +51,17 @@ export default class SingleCover extends Component {
 			break;
 	}
 
+
+
 	return (
 		<>
 			<img className={this.props.cname} src={coverSrc}></img>
+			<div className='grid-mobile-links hide-mobile-grid fa-style-mobile'>
+				<FontAwesomeIcon icon={faSpotify} />
+				<FontAwesomeIcon icon={faItunesNote} />
+				<FontAwesomeIcon icon={faYoutube} />
+				<FontAwesomeIcon icon={faSoundcloud} />
+			</div>
 		</>
 	)
   }
