@@ -52,7 +52,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .earth-video {
         width: 70%;
         display: block;
