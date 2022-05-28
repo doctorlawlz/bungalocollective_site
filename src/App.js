@@ -12,8 +12,8 @@ const App = () => {
         
         <img src={logo} className='logo'></img>
         {/* { <Home /> } */}
-        {/* <Music /> */}
-        <BrickbyBrick />
+        <Music />
+        {/* <BrickbyBrick /> */}
     </>  
     
   );
