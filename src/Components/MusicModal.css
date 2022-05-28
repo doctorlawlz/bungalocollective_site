@@ -39,15 +39,21 @@
 
 /* Hover effects */
 .coverContainer:hover .main-image {
-	filter: brightness(30%);
+	filter: brightness(40%);
 }
 
 .coverContainer:hover .hide {
-	display: block;
+	visibility: visible;
+	opacity: 1;
+	/* display: block; */
 }
 
 .hide {
-	display: none;
+	visibility: hidden;
+	opacity: 0;
+
+	transition: .5s;
+	/* display: none; */
 }
 
 .main-image {
