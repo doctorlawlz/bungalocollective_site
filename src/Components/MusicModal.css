@@ -64,13 +64,19 @@
 .main-image:hover {
 	opacity: .5;
 }
+
 .hide {
 	display: none;
 }
+
+.main-image:hover + .hide {
+	display: block;
+}
+
 /* h1 {
 	color: white;
 } */
-.coverContainer > h1 {
+.hide > h1 {
 	font-size: 2.5vw;
 	top: 22%;
     left: 50%;
@@ -83,7 +89,7 @@
 	color: white;
 }
 
-.coverContainer > h2 {
+.hide > h2 {
 	font-family: Conthrax;
 	font-size: 1.5vw;
 	top: 85%;
