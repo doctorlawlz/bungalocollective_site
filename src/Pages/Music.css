@@ -48,11 +48,23 @@
     }
 }
 
-
-/* @media (min-width: 600px) {
-.cards { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 1370px) {
+	.grid {
+		grid-template-columns: auto auto auto;
+		gap: 10% 8%;
+	}
+}
+@media (max-width: 991px) {
+	.grid {
+		grid-template-columns: auto auto;
+		gap: 5% 8%;
+	}
 }
 
-@media (min-width: 900px) {
-.cards { grid-template-columns: repeat(3, 1fr); }
-} */
+@media (max-width: 767px) {
+	.grid {
+		grid-template-columns: auto;
+		gap: 2% 0%;
+		padding: 7% 15%;
+	}
+}

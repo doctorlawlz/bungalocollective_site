@@ -19,6 +19,10 @@ export default class NavButton extends Component {
 		case 'brickIconComingSoon':
 			icon = brickIconComingSoon;
 			break;
+		
+		default:
+			icon = '';
+			break;
 	}
 
 	const navStyle = {
@@ -34,7 +38,7 @@ export default class NavButton extends Component {
 	  <div className='container col'>
 		  <div className='content'>
 			<ConditionalLink to={this.props.link}>
-				<img src={icon} className='brick'></img>
+				<img src={icon} className='brick' alt='brick'></img>
 				<p className='text'>
 					{this.props.label}
 				</p>

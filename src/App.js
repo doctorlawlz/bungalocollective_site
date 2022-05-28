@@ -10,7 +10,7 @@ const App = () => {
       <Router>
         <div className='background'></div>
         <Link to="/">
-          <img src={logo} className='logo'></img>
+          <img src={logo} className='logo' alt='logo'></img>
         </Link>
         <AnimatedRoutes />
       </Router>

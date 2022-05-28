@@ -4,6 +4,7 @@ import MusicModal from '../Components/MusicModal';
 import SingleCover from '../Components/SingleCover';
 import './Music.css'
 import { motion } from 'framer-motion';
+import { useMediaQuery } from 'react-responsive'
   
 // Handler that detects when mouse clicks outside a target
 let useClickOutside = (handler) => {
@@ -27,7 +28,7 @@ let useClickOutside = (handler) => {
 };
 
 const Music = () => {
-
+  const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
   const [openModal, setOpenModal] = useState(false);
   const [modalTitle, setTitle] = useState('');
   const [modalCover, setCover] = useState('');
@@ -88,8 +89,8 @@ const Music = () => {
               <SingleCover cname='grid-item' cover='Fly'/></a>
         </div>
         
-        {/* Opens modal whenever art is clicked */}
-        {openModal && 
+        {/* Opens modal whenever art is clicked on desktop*/}
+        {(openModal && !isMobile) && 
           <div className='modal-container'>
             <div ref={domNode}>
               <MusicModal clickedCover={modalCover} title={modalTitle} released={modalReleased}/>
