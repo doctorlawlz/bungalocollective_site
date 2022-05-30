@@ -16,7 +16,12 @@ const BrickbyBrick = () => {
               Pre-save!!!
             </a>
           </div>
-          <iframe className='video' src="https://www.youtube.com/embed/qhKsuJRkowI" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div className='video-wrapper'>
+            <div className='video-container'>
+              <iframe src="https://www.youtube.com/embed/qhKsuJRkowI?rel=0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          
           <img src={bbbcover} className='bbbcover'></img>
         </div>
         

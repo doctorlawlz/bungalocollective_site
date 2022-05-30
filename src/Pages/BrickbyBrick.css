@@ -1,7 +1,7 @@
 .bbbcover {
     display: block;
     margin: auto;
-    padding-top: 3.5%;
+    padding: 3.5% 0;
     height: 50vh;
 }
 .cover-container {
@@ -26,41 +26,56 @@
     color: #ff9e2f;
 }
 
-.video {
-    width: 100%;
-    height: 100%;
-    position: relative;
-        padding-top: 1%;
+.video-wrapper {
+    width: 60%; 
+    max-width: 2000px; 
+    height: 100%; 
+    margin: 0 auto; 
+    padding: 2%;
 }
 
+.video-container {
+    position: relative; 
+    padding-top: 56%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+}
 /*------------------MEDIA ADJUSTMENTS-------------*/
 
 @media (max-width: 991px) {
     .presave {
         font-size: 5vw;
     }
+
+    .video-wrapper {
+        width: 75%;
+    }
+
     .bbbcover {
         height: 40%;
         width: 65%;
+        padding: 5% 0;
     }
 }
 
 @media (max-width: 768px) {
     .bbbcover {
         height: 40%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: auto;
-        transform: translate(-50%, -50%);
+        padding: 5% 0;
+    }
+
+    .video-wrapper {
+        
     }
 
     .presave-container {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        width: 100%;
-        transform: translate(-50%, -50%);
+        padding: 3%;
     }
 }
 
@@ -69,8 +84,13 @@
         font-size: 7vw;
     }
     
+    .presave-container {
+        padding: 5%;
+    }
+
     .bbbcover {
-        width: 90%;
+        width: 80%;
         height: auto;
+        padding: 10% 0;
     }
 }
