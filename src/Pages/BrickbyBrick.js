@@ -16,6 +16,7 @@ const BrickbyBrick = () => {
               Pre-save!!!
             </a>
           </div>
+          <iframe className='video' src="https://www.youtube.com/embed/qhKsuJRkowI" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <img src={bbbcover} className='bbbcover'></img>
         </div>
         
