@@ -1,3 +1,7 @@
+.grid a {
+	cursor: pointer;
+}
+
 .grid {
 	padding: 2% 15%;
 	grid-template-columns: auto auto auto auto;
@@ -68,8 +72,13 @@
 	transition: .5s;
 }
 
+.sc-container .grid-item {
+	filter: brightness(100%);
+	transition: all 0.3s ease;
+}
+
 .sc-container:hover .grid-item {
-	filter: brightness(40%) blur(1px);
+	filter: brightness(30%);
 }
 
 .sc-container:hover .hide-mobile {
@@ -112,5 +121,8 @@
 	}
 	.sc-container {
 		width: 100%;
+	}
+	.sc-container:hover .grid-item {
+		filter: brightness(40%) blur(1px);
 	}
 }
