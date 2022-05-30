@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.2b31a08a.css",
-    "main.js": "/static/js/main.291a185a.js",
-    "static/js/787.0f1dccd0.chunk.js": "/static/js/787.0f1dccd0.chunk.js",
+    "main.css": "/static/css/main.dda7804f.css",
+    "main.js": "/static/js/main.cf15a34f.js",
+    "static/js/787.1f6c981f.chunk.js": "/static/js/787.1f6c981f.chunk.js",
     "static/media/Closer_full_res.jpg": "/static/media/Closer_full_res.976be08292aee60eeb81.jpg",
     "static/media/WaterIsWet_full_res.jpg": "/static/media/WaterIsWet_full_res.23226192fd9ce3675286.jpg",
     "static/media/Heatstroke_full_res.jpg": "/static/media/Heatstroke_full_res.1c971784b7686e42ed4a.jpg",
+    "static/media/Spinning_Brick_Apple.mp4": "/static/media/Spinning_Brick_Apple.e7db1e8cdbd4bf171aa7.mp4",
     "static/media/2_Basic_full_res.jpg": "/static/media/2_Basic_full_res.05cfdd46164079eceee5.jpg",
     "static/media/space.png": "/static/media/space.4aed8e44b005106d9575.png",
     "static/media/2020_full_res.jpg": "/static/media/2020_full_res.b557cf6b95b448dcafca.jpg",
@@ -24,12 +25,12 @@
     "static/media/pirulen-rg.otf": "/static/media/pirulen-rg.8cd956b0478c0e3dc882.otf",
     "static/media/bungalo-brickbybrick-logo.svg": "/static/media/bungalo-brickbybrick-logo.52601c16993aba9fed45183b2031d718.svg",
     "index.html": "/index.html",
-    "main.2b31a08a.css.map": "/static/css/main.2b31a08a.css.map",
-    "main.291a185a.js.map": "/static/js/main.291a185a.js.map",
-    "787.0f1dccd0.chunk.js.map": "/static/js/787.0f1dccd0.chunk.js.map"
+    "main.dda7804f.css.map": "/static/css/main.dda7804f.css.map",
+    "main.cf15a34f.js.map": "/static/js/main.cf15a34f.js.map",
+    "787.1f6c981f.chunk.js.map": "/static/js/787.1f6c981f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b31a08a.css",
-    "static/js/main.291a185a.js"
+    "static/css/main.dda7804f.css",
+    "static/js/main.cf15a34f.js"
   ]
 }
