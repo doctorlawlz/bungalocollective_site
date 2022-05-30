@@ -28,7 +28,7 @@ let useClickOutside = (handler) => {
 };
 
 const Music = () => {
-  const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
   const [openModal, setOpenModal] = useState(false);
   const [modalTitle, setTitle] = useState('');
