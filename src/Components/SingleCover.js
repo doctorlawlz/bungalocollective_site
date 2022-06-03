@@ -8,6 +8,7 @@ import Heatstroke from '../Site_Assets/Single_Album_Arts/Heatstroke.jpg'
 import WaterisWet from '../Site_Assets/Single_Album_Arts/WaterIsWet.jpg'
 import TBasic from '../Site_Assets/Single_Album_Arts/2_Basic.jpg'
 import Fly from '../Site_Assets/Single_Album_Arts/Fly.png'
+import BBB from '../Site_Assets/brickbybrick_cover.png'
 
 import TwentyFullRes from '../Site_Assets/Single_Album_Arts/2020_full_res.jpg'
 import CloserFullRes from '../Site_Assets/Single_Album_Arts/Closer_full_res.jpg'
@@ -15,6 +16,7 @@ import HeatstrokeFullRes from '../Site_Assets/Single_Album_Arts/Heatstroke_full_
 import WaterisWetFullRes from '../Site_Assets/Single_Album_Arts/WaterIsWet_full_res.jpg'
 import TBasicFullRes from '../Site_Assets/Single_Album_Arts/2_Basic_full_res.jpg'
 import FlyFullRes from '../Site_Assets/Single_Album_Arts/Fly_full_res.png'
+import BBBFullRes from '../Site_Assets/brickbybrick_cover.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpotify } from '@fortawesome/free-brands-svg-icons'
@@ -47,6 +49,8 @@ export default class SingleCover extends Component {
 		case 'Fly':
 			this.props.fullRes ? coverSrc = FlyFullRes : coverSrc = Fly;
 			break;
+		case 'BBB':
+			this.props.fullRes ? coverSrc = BBBFullRes : coverSrc = BBB;
 		default:
 			break;
 	}
@@ -115,6 +119,14 @@ export default class SingleCover extends Component {
 				color: '#78fbd1',
 			}
 			break;
+		case 'BBB':
+			spotifyLink = 'https://open.spotify.com/album/5yc5H4JePurNCCinq4rXuL?si=C6j5OeZPQYuQGMVqEa9srQ';
+			itunesLink = 'https://music.apple.com/us/album/fly-single/1553594411';
+			youtubeLink = 'https://youtube.com/playlist?list=PL1CT7SyutL3GXI3uUp38U9rQG5mWJzbKq';
+			soundcloudLink = 'https://soundcloud.com/bungalocollective/sets/brick-by-brick-ep/s-u8frfrOPqSe?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing';
+			color = {
+				color: '#ffc4b2',
+			}
 		default:
 			break;
 	}

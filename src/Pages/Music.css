@@ -122,6 +122,9 @@
 	.sc-container {
 		width: 100%;
 	}
+	.sc-container .grid-item {
+		transition: .5s;
+	}
 	.sc-container:hover .grid-item {
 		filter: brightness(40%) blur(1px);
 	}
