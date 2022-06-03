@@ -121,7 +121,7 @@ export default class SingleCover extends Component {
 			break;
 		case 'BBB':
 			spotifyLink = 'https://open.spotify.com/album/5yc5H4JePurNCCinq4rXuL?si=C6j5OeZPQYuQGMVqEa9srQ';
-			itunesLink = 'https://music.apple.com/us/album/fly-single/1553594411';
+			itunesLink = 'https://music.apple.com/us/album/brick-by-brick/1623292927';
 			youtubeLink = 'https://youtube.com/playlist?list=PL1CT7SyutL3GXI3uUp38U9rQG5mWJzbKq';
 			soundcloudLink = 'https://soundcloud.com/bungalocollective/sets/brick-by-brick-ep/s-u8frfrOPqSe?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing';
 			color = {
