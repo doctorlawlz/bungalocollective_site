@@ -53,6 +53,13 @@ const BrickbyBrick = () => {
       animate={{opacity: 1}}
       exit={{opacity: 0}}
     >
+
+      <div className='video-wrapper'>
+        <div className='video-container'>
+          <iframe src="https://www.youtube.com/embed/2NK76pAxopc?rel=0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      
       <div className='gridBBB'>
         <a onClick={() => { 
           setOpenModal(true); 
