@@ -50,6 +50,27 @@
     height: 100%;
 }
 
+.video-wrapper-mv {
+    width: 60%; 
+    max-width: 2000px; 
+    height: 100%; 
+    margin: 0 auto; 
+    padding: 2%;
+}
+
+.video-container-mv {
+    position: relative; 
+    padding-top: 57%;
+}
+
+.video-container-mv iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+}
+
 
 /* Standard syntax */
 @keyframes fadeIn {
@@ -74,7 +95,7 @@
         padding: 3%;
 	}
 
-	.video-wrapper {
+	.video-wrapper, .video-wrapper-mv {
         width: 70%;
     } 
 }
