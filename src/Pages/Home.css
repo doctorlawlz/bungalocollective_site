@@ -25,6 +25,20 @@
     width: 60%;
     height: 60%;
   }
+
+  /* Centers Dancing Bungaboys */
+  .dancing-bungaboys {
+    display: flex; /* Use flexbox to align the GIFs next to each other */
+    flex-wrap: wrap;
+    justify-content: center; /* Center the flex container horizontally */
+    align-items: center; /* Center the flex container vertically */
+    height: 62vh; /* Set the height to 100vh to take up the full viewport height */
+  }
+  
+  .dancing-bungaboys img {
+    margin-right: 0px; /* Add spacing between the GIFs */
+    max-height: 100%; /* Set the maximum height for the GIFs */
+  }
   
   /* NavButton grid */
   .flex-grid {
@@ -39,7 +53,7 @@
       animation: App-logo-spin infinite 20s linear;
     }
   } */
-  
+
   /*------------------MEDIA ADJUSTMENTS-------------*/
 
 @media (max-width: 991px) {

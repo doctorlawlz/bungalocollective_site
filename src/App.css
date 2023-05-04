@@ -1,16 +1,16 @@
 .background {
   z-index: -1;
   position: fixed;
-  background-Image: url("Site_Assets/space.png");
+  background-Image: url("Site_Assets/plazma_beach_bg.jpg");
   height: 100vh;
   width: 100%;
-  background-size: 75vh;
   background-attachment: fixed;
   /* background-size: cover; */
   transform: translate3d(0,0,0);  
   top: 0;
   left: 0;
   bottom: -80px;
+  background-size: cover;
 
   /*
   animation: slide 5s linear infinite;
@@ -39,6 +39,30 @@
 
 .logo:hover {
   filter: invert(72%) sepia(52%) saturate(1312%) hue-rotate(337deg) brightness(300%) contrast(101%);
+}
+
+.color-overlay {
+  filter: hue-rotate(0deg);
+  animation: colorCycle 5s infinite;
+}
+
+ /* Define the keyframes for the color cycling animation */
+ @keyframes colorCycle {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    filter: hue-rotate(90deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  75% {
+    filter: hue-rotate(270deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
 }
 
 @media (max-width: 991px) {

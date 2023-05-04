@@ -3,6 +3,11 @@ import { useRef } from 'react';
 import NavButton from '../Components/NavButton';
 import spinningBrick from '../Site_Assets/Spinning_Brick.webm';
 import spinningBrickApple from '../Site_Assets/Spinning_Brick_Apple.mp4';
+import chrisDance from '../Site_Assets/GIFS/chris_dance_optimized.gif';
+import danDance from '../Site_Assets/GIFS/dan_dance_optimized.gif';
+import liamDance from '../Site_Assets/GIFS/liam_dance_optimized.gif';
+import jonDance from '../Site_Assets/GIFS/jon_dance_optimized.gif';
+import jacobDance from '../Site_Assets/GIFS/jacob_dance_optimized.gif';
 import './Home.css';
 import { motion } from 'framer-motion';
 
@@ -21,10 +26,13 @@ const Home = () => {
         exit={{opacity: 0}}
       >
 
-        <video ref={videoRef} muted playsInline loop={true} autoPlay className='earth-video'>
-          <source src={spinningBrickApple} type='video/mp4;codecs=hvc1'/>
-          <source src={spinningBrick} type="video/webm"/>
-        </video> 
+          <div class="dancing-bungaboys">
+            <img src={chrisDance} style={{ marginRight: '1%', height: '49%'}} />
+            <img src={danDance}style={{ height: '51%'}} />
+            <img src={liamDance} style={{ marginLeft: '2%', height: '45%'}}/>
+            <img src={jonDance} style={{ height: '54%'}}/>
+            <img src={jacobDance} style={{ height: '51%'}}/>
+          </div>
         
         
           <div className='center-pivot'>
