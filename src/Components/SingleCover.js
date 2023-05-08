@@ -9,6 +9,9 @@ import WaterisWet from '../Site_Assets/Single_Album_Arts/WaterIsWet.jpg'
 import TBasic from '../Site_Assets/Single_Album_Arts/2_Basic.jpg'
 import Fly from '../Site_Assets/Single_Album_Arts/Fly.png'
 import BBB from '../Site_Assets/brickbybrick_cover.png'
+import SPICE from '../Site_Assets/Single_Album_Arts/Spice.jpg'
+import Greener from '../Site_Assets/Single_Album_Arts/Greener.jpg'
+import Plazma from '../Site_Assets/Single_Album_Arts/Plazma.jpg'
 
 import TwentyFullRes from '../Site_Assets/Single_Album_Arts/2020_full_res.jpg'
 import CloserFullRes from '../Site_Assets/Single_Album_Arts/Closer_full_res.jpg'
@@ -17,6 +20,9 @@ import WaterisWetFullRes from '../Site_Assets/Single_Album_Arts/WaterIsWet_full_
 import TBasicFullRes from '../Site_Assets/Single_Album_Arts/2_Basic_full_res.jpg'
 import FlyFullRes from '../Site_Assets/Single_Album_Arts/Fly_full_res.png'
 import BBBFullRes from '../Site_Assets/brickbybrick_cover.png'
+import SPICEFullRes from '../Site_Assets/Single_Album_Arts/Spice_full_res.png'
+import GreenerFullRes from '../Site_Assets/Single_Album_Arts/Greener_full_res.png'
+import PlazmaFullRes from '../Site_Assets/Single_Album_Arts/Plazma_full_res.jpg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpotify } from '@fortawesome/free-brands-svg-icons'
@@ -51,6 +57,16 @@ export default class SingleCover extends Component {
 			break;
 		case 'BBB':
 			this.props.fullRes ? coverSrc = BBBFullRes : coverSrc = BBB;
+			break;
+		case 'SPICE':
+			this.props.fullRes ? coverSrc = SPICEFullRes : coverSrc = SPICE;
+			break;
+		case 'Greener':
+			this.props.fullRes ? coverSrc = GreenerFullRes : coverSrc = Greener;
+			break;
+		case 'Plazma':
+			this.props.fullRes ? coverSrc = PlazmaFullRes : coverSrc = Plazma;
+			break;
 		default:
 			break;
 	}
@@ -127,6 +143,34 @@ export default class SingleCover extends Component {
 			color = {
 				color: '#ffc4b2',
 			}
+			break;
+		case 'SPICE':
+			spotifyLink = 'https://open.spotify.com/track/76Lejrx3yj7Mekl2PdqrOo?si=8430a0659a244460';
+			itunesLink = 'https://music.apple.com/us/album/spice/1639904717?i=1639904741';
+			youtubeLink = 'https://youtu.be/55K1QyYt-hY';
+			soundcloudLink = 'https://soundcloud.com/artbyform/bungalo-spice';
+			color = {
+				color: '#ffffff',
+			}
+			break;
+		case 'Greener':
+			spotifyLink = 'https://open.spotify.com/track/6JF2SiaT3FUjBFYVdEvSOK?si=3c03bea3caae48cb';
+			itunesLink = 'https://music.apple.com/us/album/greener/1675171110?i=1675171111';
+			youtubeLink = 'https://youtu.be/-FFPe-DcuJQ';
+			soundcloudLink = 'https://soundcloud.com/bungalocollective/greener-final';
+			color = {
+				color: '#95eaf5',
+			}
+			break;
+		case 'Plazma':
+			spotifyLink = 'https://open.spotify.com/album/1FImiokeGkk9M8YLW51JRC?si=-noDLCfkQRqtoXKBIs-o5w';
+			itunesLink = 'https://music.apple.com/ae/album/plazma-ep/1685672898';
+			youtubeLink = 'https://youtu.be/YKxEl6Dfqvg';
+			soundcloudLink = 'https://soundcloud.com/bungalocollective/sets/plazma-ep/s-Iqm7YzrZhul?si=c6db351f193b461b995ddc45f5dba4c6&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing';
+			color = {
+				color: '#21e1eb',
+			}
+			break;
 		default:
 			break;
 	}

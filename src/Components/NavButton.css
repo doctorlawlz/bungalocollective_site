@@ -2,8 +2,8 @@
 	/* background: #ffbd17; */
 	position: relative;
 	color: white;
-	width: 30vmin;
-	height: 30vmin;
+	width: 100%;
+	/* height: 30vmin; */
 }
 
 /* Columns for Flex Grid */
@@ -14,18 +14,46 @@
 /* Inner container for centering */
 .content {
 	/* background: #06c; */
-	position:absolute; 
 	top:25%; 
-	height:10em; 
+	height:100%; 
 	/* margin-top:-5em; */
 	margin: auto;
+	display: flex;
+}
+
+.text {
+	position: unset;
+}
+
+.nav-button-img-container {
+	position: relative;
+	margin: auto;
+	padding-top: 5%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+}
+
+.nav-button {
+	height: 12em;
 }
 
 .brick {
-	position: relative;
-	display: block;
-	margin: auto;
-	width: 60%;
+	height: 10em;
+}
+
+.plazma {
+
+}
+
+.music {
+
+}
+
+.merch {
+	
+	height: 10em;
 }
 
 p {
@@ -42,4 +70,75 @@ p {
     transition-duration: 100ms;
     -moz-transition-duration: 100ms;
     -webkit-transition-duration: 100ms;
+}
+
+@media (max-width: 1440px) {
+	.nav-button {
+		height: 8em;
+	}
+
+	.brick {
+		height: 7em;
+	}
+
+	.merch {
+		height: 7em;
+	}
+}
+
+@media (max-width: 1024px) {
+	p {
+		font-size: 0.8em;
+	}
+	.nav-button {
+		height: 6em;
+	}
+
+	.brick {
+		height: 5em;
+	}
+
+	.merch {
+		height: 5em;
+	}
+}
+
+@media (max-width: 768px) {
+
+	/* Landscape */
+	@media screen and (orientation: landscape) {
+		p {
+			font-size: 0.8em;
+		}
+		.nav-button {
+			height: 6em;
+		}
+	
+		.brick {
+			height: 5em;
+		}
+	
+		.merch {
+			height: 5em;
+		}
+	}
+	
+	/* Portrait */
+	@media screen and (orientation: portrait) {
+		p {
+			font-size: 1.3em;
+		}
+		.nav-button {
+			height: 12em;
+		}
+	
+		.brick {
+			height: 10em;
+		}
+	
+		.merch {
+			height: 11em;
+		}
+	}
+
 }

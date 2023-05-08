@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import NavButton from '../Components/NavButton';
 import spinningBrick from '../Site_Assets/Spinning_Brick.webm';
 import spinningBrickApple from '../Site_Assets/Spinning_Brick_Apple.mp4';
+import plazmaFisheye from '../Site_Assets/PNGS/plazma_fisheye.png';
 import chrisDance from '../Site_Assets/GIFS/chris_dance_optimized.gif';
 import danDance from '../Site_Assets/GIFS/dan_dance_optimized.gif';
 import liamDance from '../Site_Assets/GIFS/liam_dance_optimized.gif';
@@ -25,7 +26,7 @@ const Home = () => {
         animate={{opacity: 1}}
         exit={{opacity: 0}}
       >
-
+        {/*
           <div class="dancing-bungaboys">
             <img src={chrisDance} style={{ marginRight: '1%', height: '49%'}} />
             <img src={danDance}style={{ height: '51%'}} />
@@ -33,16 +34,20 @@ const Home = () => {
             <img src={jonDance} style={{ height: '54%'}}/>
             <img src={jacobDance} style={{ height: '51%'}}/>
           </div>
+        */}
         
-        
+        <div className='center-image-container'>
+          <img src={plazmaFisheye}/>
+        </div> 
+
           <div className='center-pivot'>
             <div className="flex-grid">
-              <NavButton label="BRICK BY BRICK" icon='brickIcon' link="/brickbybrick"/>
-              <NavButton label="MUSIC" icon='brickIcon' link="/music"/>
+              <NavButton label="PLAZMA" icon='plazmaIcon' link="/plazma" style="plazma"/>
+              <NavButton label="MUSIC" icon='musicIcon' link="/music" style="music"/>
             </div>
             <div className="flex-grid">
-              <NavButton label="MERCH" icon='brickIconComingSoon'/>
-              <NavButton label="GALLERY" icon='brickIconComingSoon'/>
+              <NavButton label="BRICK BY BRICK" icon='brickIcon' link="/brickbybrick" style="brick"/>
+              <NavButton label="MERCH" icon='merchIcon' link="/" style="merch"/>
             </div>
           </div>
 

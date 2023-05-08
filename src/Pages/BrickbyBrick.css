@@ -71,6 +71,14 @@
     height: 100%;
 }
 
+/* Centers earth video */
+.earth-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+    width: 100%;
+}
 
 /* Standard syntax */
 @keyframes fadeIn {
@@ -106,4 +114,25 @@
 		gap: 2% 0%;
 		padding: 2% 15%;
 	}
+
+    .earth-video {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        position: relative; 
+        left: auto; 
+        top: auto; 
+        transform: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .earth-video {
+        height: 100%;
+    }
+
+    .video-wrapper-mv {
+        padding: 5%;
+    }
 }

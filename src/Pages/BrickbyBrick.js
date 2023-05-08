@@ -1,5 +1,7 @@
 import React from 'react';
 import './BrickbyBrick.css';
+import spinningBrick from '../Site_Assets/Spinning_Brick.webm';
+import spinningBrickApple from '../Site_Assets/Spinning_Brick_Apple.mp4';
 import SingleCover from '../Components/SingleCover';
 import MusicModal from '../Components/MusicModal';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -27,10 +29,12 @@ let useClickOutside = (handler) => {
   return domNode;
 };
 
+
 const BrickbyBrick = () => {
 
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
+  const videoRef = useRef(null);
   const [openModal, setOpenModal] = useState(false);
   const [blackBackdrop, showBlackBackdrop] = useState(false);
   const [modalTitle, setTitle] = useState('');
@@ -47,13 +51,20 @@ const BrickbyBrick = () => {
     setOpenModal(false);
   });
 
+
+
   return (
     <motion.div
       initial={{opacity: 0}}
       animate={{opacity: 1}}
       exit={{opacity: 0}}
     >
-
+      <div className='video-wrapper-mv'>
+        <video ref={videoRef} muted playsInline loop={true} autoPlay className='earth-video'>
+            <source src={spinningBrickApple} type='video/mp4;codecs=hvc1'/>
+            <source src={spinningBrick} type="video/webm"/>
+        </video> 
+      </div>
       <div className='video-wrapper-mv'>
         <div className='video-container-mv'>
           <iframe src="https://www.youtube.com/embed/xF6HeArOrjA?rel=0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

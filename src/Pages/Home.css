@@ -15,17 +15,6 @@
     transform: translate(-50%, -50%);
   }
   
-  /* Centers earth video */
-  .earth-video {
-    position: absolute;
-    left: 50%;
-    top: 52%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 60%;
-    height: 60%;
-  }
-
   /* Centers Dancing Bungaboys */
   .dancing-bungaboys {
     display: flex; /* Use flexbox to align the GIFs next to each other */
@@ -40,6 +29,16 @@
     max-height: 100%; /* Set the maximum height for the GIFs */
   }
   
+  .center-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 59vh;
+  }
+
+  .center-image-container img {
+    width: 16%;
+  }
   /* NavButton grid */
   .flex-grid {
       display: flex;
@@ -56,28 +55,14 @@
 
   /*------------------MEDIA ADJUSTMENTS-------------*/
 
-@media (max-width: 991px) {
-    .earth-video {
-        width: 35%;
-    }
 
-    .brick {
-        width: 85%;
+@media (max-width: 1024px) {
+    .center-image-container img {
+      width: 20%;
     }
-}
+  }
 
 @media (max-width: 768px) {
-    .earth-video {
-        width: 70%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-
-        position: relative; 
-        left: auto; 
-        top: auto; 
-        transform: none;
-    }
 
     .center-pivot {
         width: 100%;
@@ -107,13 +92,33 @@
         height: unset;
     }
 
-    .brick {
-        width: 65%;
+    .center-image-container {
+        height: 50vh;
+    }
+    
+    .center-image-container img {
+      width: 26%;
+    }
+
+    /* Landscape */
+    @media screen and (orientation: landscape) {
+      .center-image-container img {
+        width: 16%;
+      }
+    }
+
+    /* Portrait */
+    @media screen and (orientation: portrait) {
+      .center-image-container img {
+        width: 30%;
+      }
     }
 }
 
-/*
-@media (max-width: 420px) {
-   
+
+@media (max-width: 425px) {
+    .center-image-container img {
+      width: 48%;
+    }
 }
-*/
+

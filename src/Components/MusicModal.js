@@ -85,6 +85,33 @@ export default class MusicModal extends Component {
 			color = {
 				color: '#ffc4b2',
 			}
+		case 'SPICE':
+			spotifyLink = 'https://open.spotify.com/track/76Lejrx3yj7Mekl2PdqrOo?si=8430a0659a244460';
+			itunesLink = 'https://music.apple.com/us/album/spice/1639904717?i=1639904741';
+			youtubeLink = 'https://youtu.be/55K1QyYt-hY';
+			soundcloudLink = 'https://soundcloud.com/artbyform/bungalo-spice';
+			color = {
+				color: '#ffffff',
+			}
+			break;
+		case 'Greener':
+			spotifyLink = 'https://open.spotify.com/track/6JF2SiaT3FUjBFYVdEvSOK?si=3c03bea3caae48cb';
+			itunesLink = 'https://music.apple.com/us/album/greener/1675171110?i=1675171111';
+			youtubeLink = 'https://youtu.be/-FFPe-DcuJQ';
+			soundcloudLink = 'https://soundcloud.com/bungalocollective/greener-final';
+			color = {
+				color: '#0cf54a',
+			}
+			break;
+		case 'Plazma':
+			spotifyLink = 'https://open.spotify.com/album/1FImiokeGkk9M8YLW51JRC?si=-noDLCfkQRqtoXKBIs-o5w';
+			itunesLink = 'https://music.apple.com/ae/album/plazma-ep/1685672898';
+			youtubeLink = 'https://youtu.be/YKxEl6Dfqvg';
+			soundcloudLink = 'https://soundcloud.com/bungalocollective/sets/plazma-ep/s-Iqm7YzrZhul?si=c6db351f193b461b995ddc45f5dba4c6&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing';
+			color = {
+				color: '#95eaf5',
+			}
+			break;
 		default:
 			break;
 	}

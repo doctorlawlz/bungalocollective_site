@@ -1,0 +1,27 @@
+.plazma-fisheye {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.plazma-fisheye img {
+    width: 30%;
+}
+
+.video-wrapper {
+    width: 40%;
+}
+
+.plazma-ep-video-contianer {
+    padding-top: 100%;
+}
+
+@media (max-width: 425px) {
+    @media screen and (orientation: portrait) {
+        .plazma-fisheye img {
+            width: 50%;
+        }
+        
+    }
+}

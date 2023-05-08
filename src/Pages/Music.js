@@ -55,6 +55,21 @@ const Music = () => {
       >
         
         <div className='grid'>
+        <a onClick={() => { 
+            setOpenModal(true); 
+            updateModalProps('Plazma', 'Plazma', '05/05/23')
+          }}>
+              <SingleCover cname='grid-item' cover='Plazma'/></a>
+        <a onClick={() => { 
+            setOpenModal(true); 
+            updateModalProps('Greener', 'Greener', '03/03/23')
+          }}>
+              <SingleCover cname='grid-item' cover='Greener'/></a>
+        <a onClick={() => { 
+            setOpenModal(true); 
+            updateModalProps('SPICE', 'SPICE', '08/12/22')
+          }}>
+              <SingleCover cname='grid-item' cover='SPICE'/></a>
           <a onClick={() => { 
             setOpenModal(true); 
             updateModalProps('Brick By Brick', 'BBB', '06/03/22')

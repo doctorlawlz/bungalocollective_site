@@ -1,22 +1,39 @@
 import './App.css';
 import React from 'react';
-import logo from './Site_Assets/GIFS/Bungalo-Drawn-Logo-White.gif';
+import mainLogo from './Site_Assets/GIFS/Bungalo-Drawn-Logo-White.gif';
+import BBBLogo from './Site_Assets/bungalo-brickbybrick-logo.svg'
+import plazmaLogo from './Site_Assets/PNGS/Plazma_Logo.png'
 import AnimatedRoutes from './Components/AnimatedRoutes';
-import { HashRouter as Router, Link} from 'react-router-dom';
-// import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link, useLocation} from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const App = () => {
+  const location = useLocation();
+  const backgroundClass = location.pathname === '/plazma'
+    ? 'background-plazma'
+    : location.pathname === '/brickbybrick' 
+      ? 'background-brickbybrick' 
+      : 'background-plazma'; /* change this to custom home background later */
+  const logo = location.pathname === '/plazma' 
+    ? plazmaLogo
+    : location.pathname === '/brickbybrick'
+      ? BBBLogo
+      : mainLogo
   return (
     <>
-      <Router>
-        <div className='background'></div>
+        <motion.div 
+          className={backgroundClass}
+          
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
+          exit={{opacity: 0}}
+
+        ></motion.div>
         <Link to="/">
           <img src={logo} className='logo color-overlay' alt='logo'></img>
         </Link>
         <AnimatedRoutes />
-      </Router>
-    </>  
-    
+    </> 
   );
 }
 
