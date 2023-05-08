@@ -25,3 +25,10 @@
         
     }
 }
+
+@media (max-width: 768px) {
+
+    .video-wrapper {
+        width: 70%;
+    }
+}
