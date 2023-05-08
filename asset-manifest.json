@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.29948e70.css",
-    "main.js": "/static/js/main.304318d7.js",
+    "main.js": "/static/js/main.ff8877cc.js",
     "static/js/787.0f1dccd0.chunk.js": "/static/js/787.0f1dccd0.chunk.js",
     "static/media/brickbybrick_cover.png": "/static/media/brickbybrick_cover.5fcc3b2bf342f23f1260.png",
     "static/media/Closer_full_res.jpg": "/static/media/Closer_full_res.976be08292aee60eeb81.jpg",
@@ -44,11 +44,11 @@
     "static/media/bungalo-brickbybrick-logo.svg": "/static/media/bungalo-brickbybrick-logo.52601c16993aba9fed45183b2031d718.svg",
     "index.html": "/index.html",
     "main.29948e70.css.map": "/static/css/main.29948e70.css.map",
-    "main.304318d7.js.map": "/static/js/main.304318d7.js.map",
+    "main.ff8877cc.js.map": "/static/js/main.ff8877cc.js.map",
     "787.0f1dccd0.chunk.js.map": "/static/js/787.0f1dccd0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.29948e70.css",
-    "static/js/main.304318d7.js"
+    "static/js/main.ff8877cc.js"
   ]
 }
