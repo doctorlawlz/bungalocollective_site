@@ -47,7 +47,7 @@ const Home = () => {
             </div>
             <div className="flex-grid">
               <NavButton label="BRICK BY BRICK" icon='brickIcon' link="/brickbybrick" style="brick"/>
-              <NavButton label="MERCH" icon='merchIcon' link="/" style="merch"/>
+              <NavButton label="STORE" icon='merchIcon' link="/" style="merch"/>
             </div>
           </div>
 
