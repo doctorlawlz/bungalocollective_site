@@ -71,12 +71,12 @@ const Plazma = () => {
         </div>
       </div>
       
-      <div className='gridBBB'>
+      <div className='grid-bbb'>
         <a onClick={() => { 
           setOpenModal(true); 
           updateModalProps('Plazma', 'Plazma', '05/05/23')
         }}>
-            <SingleCover cname='grid-itemBBB' cover='Plazma'/></a>
+            <SingleCover cname='grid-item-bbb' cover='Plazma'/></a>
       </div>
 
       {/* Opens modal whenever art is clicked on desktop*/}

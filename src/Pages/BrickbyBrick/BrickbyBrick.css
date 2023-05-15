@@ -1,8 +1,8 @@
-.gridBBB a {
+.grid-bbb a {
 	cursor: pointer;
 }
 
-.gridBBB {
+.grid-bbb {
 	padding: 1% 15% 2%;
 	grid-template-columns: auto;
 	gap: 10% 5%;
@@ -12,7 +12,7 @@
     margin: 0 17%;
 }
 
-.grid-itemBBB {
+.grid-item-bbb {
 	background-color: dodgerblue;
 	color: white;
 	/* padding: 10%; */
@@ -20,12 +20,12 @@
 	height: auto;
 }
 
-.sc-container .grid-itemBBB {
+.sc-container .grid-item-bbb {
 	filter: brightness(100%);
 	transition: all 0.3s ease;
 }
 
-.sc-container:hover .grid-itemBBB {
+.sc-container:hover .grid-item-bbb {
 	filter: brightness(30%);
 }
 
@@ -91,13 +91,13 @@
 }
 
 @media (max-width: 1370px) {
-	.gridBBB {
+	.grid-bbb {
         margin: 0 10%;
 		gap: 10% 8%;
 	}
 }
 @media (max-width: 991px) {
-	.gridBBB {
+	.grid-bbb {
         margin: 0 7%;
 		gap: 5% 8%;
         padding: 3%;
@@ -109,7 +109,7 @@
 }
 
 @media (max-width: 768px) {
-	.gridBBB {
+	.grid-bbb {
         margin: 0;
 		gap: 2% 0%;
 		padding: 2% 15%;

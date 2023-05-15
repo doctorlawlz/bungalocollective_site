@@ -76,12 +76,12 @@ const BrickbyBrick = () => {
         </div>
       </div>
       
-      <div className='gridBBB'>
+      <div className='grid-bbb'>
         <a onClick={() => { 
           setOpenModal(true); 
           updateModalProps('Brick By Brick', 'BBB', '06/03/22')
         }}>
-            <SingleCover cname='grid-itemBBB' cover='BBB'/></a>
+            <SingleCover cname='grid-item-bbb' cover='BBB'/></a>
       </div>
 
       {/* Opens modal whenever art is clicked on desktop*/}

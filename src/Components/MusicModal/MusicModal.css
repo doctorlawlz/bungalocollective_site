@@ -33,7 +33,7 @@
     transform: translate(-50%, -50%);
 }
 
-.coverContainer {
+.cover-container {
 	width: 33%;
 	z-index: 999;
 	position: absolute;
@@ -43,11 +43,11 @@
 }
 
 /* Hover effects */
-.coverContainer:hover .main-image {
+.cover-container:hover .main-image {
 	filter: brightness(40%) blur(2px);
 }
 
-.coverContainer:hover .hide {
+.cover-container:hover .hide {
 	visibility: visible;
 	opacity: 1;
 	/* display: block; */
@@ -106,7 +106,7 @@ h2 {
 		font-size: 12vw;
 	}
 	
-	.coverContainer {
+	.cover-container {
 		width: 50%;
 	}
 
@@ -124,7 +124,7 @@ h2 {
 		font-size: 16vw;
 	}
 	
-	.coverContainer {
+	.cover-container {
 		width: 65%;
 	}
 
