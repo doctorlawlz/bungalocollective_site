@@ -1,10 +1,9 @@
 import React from 'react';
-import './Plazma.css';
 import './BrickbyBrick.css';
-import plama from '../Site_Assets/Spinning_Brick.webm';
-import plazmaFisheye from '../Site_Assets/PNGS/plazma_fisheye.png';
-import SingleCover from '../Components/SingleCover';
-import MusicModal from '../Components/MusicModal';
+import spinningBrick from '../../Site_Assets/Spinning_Brick.webm';
+import spinningBrickApple from '../../Site_Assets/Spinning_Brick_Apple.mp4';
+import SingleCover from '../../Components/SingleCover/SingleCover';
+import MusicModal from '../../Components/MusicModal/MusicModal';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive'
 import { useState, useEffect, useRef } from 'react';
@@ -31,7 +30,7 @@ let useClickOutside = (handler) => {
 };
 
 
-const Plazma = () => {
+const BrickbyBrick = () => {
 
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
@@ -61,22 +60,28 @@ const Plazma = () => {
       exit={{opacity: 0}}
     >
       <div className='video-wrapper-mv'>
-        <div className='plazma-fisheye'>
-          <img src={plazmaFisheye} />
-        </div> 
+        <video ref={videoRef} muted playsInline loop={true} autoPlay className='earth-video'>
+            <source src={spinningBrickApple} type='video/mp4;codecs=hvc1'/>
+            <source src={spinningBrick} type="video/webm"/>
+        </video> 
+      </div>
+      <div className='video-wrapper-mv'>
+        <div className='video-container-mv'>
+          <iframe src="https://www.youtube.com/embed/xF6HeArOrjA?rel=0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
       <div className='video-wrapper'>
-        <div className='plazma-ep-video-contianer video-container'>
-          <iframe src="https://www.youtube.com/embed/YKxEl6Dfqvg?rel=0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div className='video-container'>
+          <iframe src="https://www.youtube.com/embed/2NK76pAxopc?rel=0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
       
       <div className='gridBBB'>
         <a onClick={() => { 
           setOpenModal(true); 
-          updateModalProps('Plazma', 'Plazma', '05/05/23')
+          updateModalProps('Brick By Brick', 'BBB', '06/03/22')
         }}>
-            <SingleCover cname='grid-itemBBB' cover='Plazma'/></a>
+            <SingleCover cname='grid-itemBBB' cover='BBB'/></a>
       </div>
 
       {/* Opens modal whenever art is clicked on desktop*/}
@@ -98,4 +103,4 @@ const Plazma = () => {
   );
 };
   
-export default Plazma;
+export default BrickbyBrick;

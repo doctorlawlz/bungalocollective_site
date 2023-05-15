@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect, useRef } from 'react';
-import MusicModal from '../Components/MusicModal';
-import SingleCover from '../Components/SingleCover';
+import MusicModal from '../../Components/MusicModal/MusicModal';
+import SingleCover from '../../Components/SingleCover/SingleCover';
 import './Music.css'
 import { motion, AnimatePresence } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive'

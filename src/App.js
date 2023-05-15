@@ -3,7 +3,7 @@ import React from 'react';
 import mainLogo from './Site_Assets/GIFS/Bungalo-Drawn-Logo-White.gif';
 import BBBLogo from './Site_Assets/bungalo-brickbybrick-logo.svg'
 import plazmaLogo from './Site_Assets/PNGS/Plazma_Logo.png'
-import AnimatedRoutes from './Components/AnimatedRoutes';
+import AnimatedRoutes from './Components/AnimatedRoutes/AnimatedRoutes';
 import { Link, useLocation} from 'react-router-dom';
 import { motion } from 'framer-motion';
 

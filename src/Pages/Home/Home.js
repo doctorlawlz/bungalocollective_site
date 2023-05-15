@@ -1,14 +1,14 @@
 import React from 'react';
 import { useRef } from 'react';
-import NavButton from '../Components/NavButton';
-import spinningBrick from '../Site_Assets/Spinning_Brick.webm';
-import spinningBrickApple from '../Site_Assets/Spinning_Brick_Apple.mp4';
-import plazmaFisheye from '../Site_Assets/PNGS/plazma_fisheye.png';
-import chrisDance from '../Site_Assets/GIFS/chris_dance_optimized.gif';
-import danDance from '../Site_Assets/GIFS/dan_dance_optimized.gif';
-import liamDance from '../Site_Assets/GIFS/liam_dance_optimized.gif';
-import jonDance from '../Site_Assets/GIFS/jon_dance_optimized.gif';
-import jacobDance from '../Site_Assets/GIFS/jacob_dance_optimized.gif';
+import NavButton from '../../Components/NavButton/NavButton';
+import spinningBrick from '../../Site_Assets/Spinning_Brick.webm';
+import spinningBrickApple from '../../Site_Assets/Spinning_Brick_Apple.mp4';
+import plazmaFisheye from '../../Site_Assets/PNGS/plazma_fisheye.png';
+import chrisDance from '../../Site_Assets/GIFS/chris_dance_optimized.gif';
+import danDance from '../../Site_Assets/GIFS/dan_dance_optimized.gif';
+import liamDance from '../../Site_Assets/GIFS/liam_dance_optimized.gif';
+import jonDance from '../../Site_Assets/GIFS/jon_dance_optimized.gif';
+import jacobDance from '../../Site_Assets/GIFS/jacob_dance_optimized.gif';
 import './Home.css';
 import { motion } from 'framer-motion';
 

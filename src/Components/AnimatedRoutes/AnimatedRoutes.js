@@ -1,8 +1,8 @@
 import React from 'react'
-import Home from '../Pages/Home';
-import Music from '../Pages/Music';
-import BrickbyBrick from '../Pages/BrickbyBrick'
-import Plazma from '../Pages/Plazma'
+import Home from '../../Pages/Home/Home';
+import Music from '../../Pages/Music/Music';
+import BrickbyBrick from '../../Pages/BrickbyBrick/BrickbyBrick';
+import Plazma from '../../Pages/Plazma/Plazma';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 import { AnimatePresence } from 'framer-motion'

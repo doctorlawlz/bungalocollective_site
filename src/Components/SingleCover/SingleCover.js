@@ -1,17 +1,75 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import SingleCover from './SingleCover'
-import './MusicModal.css'
+import "../../Pages/Music/Music.css"
+
+import Twenty from '../../Site_Assets/Single_Album_Arts/2020.jpg'
+import Closer from '../../Site_Assets/Single_Album_Arts/Closer.jpg'
+import Heatstroke from '../../Site_Assets/Single_Album_Arts/Heatstroke.jpg'
+import WaterisWet from '../../Site_Assets/Single_Album_Arts/WaterIsWet.jpg'
+import TBasic from '../../Site_Assets/Single_Album_Arts/2_Basic.jpg'
+import Fly from '../../Site_Assets/Single_Album_Arts/Fly.png'
+import BBB from '../../Site_Assets/brickbybrick_cover.png'
+import SPICE from '../../Site_Assets/Single_Album_Arts/Spice.jpg'
+import Greener from '../../Site_Assets/Single_Album_Arts/Greener.jpg'
+import Plazma from '../../Site_Assets/Single_Album_Arts/Plazma.jpg'
+
+import TwentyFullRes from '../../Site_Assets/Single_Album_Arts/2020_full_res.jpg'
+import CloserFullRes from '../../Site_Assets/Single_Album_Arts/Closer_full_res.jpg'
+import HeatstrokeFullRes from '../../Site_Assets/Single_Album_Arts/Heatstroke_full_res.jpg'
+import WaterisWetFullRes from '../../Site_Assets/Single_Album_Arts/WaterIsWet_full_res.jpg'
+import TBasicFullRes from '../../Site_Assets/Single_Album_Arts/2_Basic_full_res.jpg'
+import FlyFullRes from '../../Site_Assets/Single_Album_Arts/Fly_full_res.png'
+import BBBFullRes from '../../Site_Assets/brickbybrick_cover.png'
+import SPICEFullRes from '../../Site_Assets/Single_Album_Arts/Spice_full_res.png'
+import GreenerFullRes from '../../Site_Assets/Single_Album_Arts/Greener_full_res.png'
+import PlazmaFullRes from '../../Site_Assets/Single_Album_Arts/Plazma_full_res.jpg'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpotify } from '@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faItunesNote } from '@fortawesome/free-brands-svg-icons'
 import { faSoundcloud } from '@fortawesome/free-brands-svg-icons'
 
-
-export default class MusicModal extends Component {
+export default class SingleCover extends Component {
 
   render() {
+
+	let coverSrc = '';
+
+	switch(this.props.cover){
+		case '2020':
+			this.props.fullRes ? coverSrc = TwentyFullRes : coverSrc = Twenty;
+			break;
+		case 'Closer':
+			this.props.fullRes ? coverSrc = CloserFullRes : coverSrc = Closer;
+			break;
+		case 'Heatstroke':
+			this.props.fullRes ? coverSrc = HeatstrokeFullRes : coverSrc = Heatstroke;
+			break;
+		case 'WaterisWet':
+			this.props.fullRes ? coverSrc = WaterisWetFullRes : coverSrc = WaterisWet;
+			break;
+		case '2Basic':
+			this.props.fullRes ? coverSrc = TBasicFullRes : coverSrc = TBasic;
+			break;
+		case 'Fly':
+			this.props.fullRes ? coverSrc = FlyFullRes : coverSrc = Fly;
+			break;
+		case 'BBB':
+			this.props.fullRes ? coverSrc = BBBFullRes : coverSrc = BBB;
+			break;
+		case 'SPICE':
+			this.props.fullRes ? coverSrc = SPICEFullRes : coverSrc = SPICE;
+			break;
+		case 'Greener':
+			this.props.fullRes ? coverSrc = GreenerFullRes : coverSrc = Greener;
+			break;
+		case 'Plazma':
+			this.props.fullRes ? coverSrc = PlazmaFullRes : coverSrc = Plazma;
+			break;
+		default:
+			break;
+	}
 
 	let spotifyLink = '';
 	let itunesLink = '';
@@ -21,7 +79,7 @@ export default class MusicModal extends Component {
 		color: 'white',
 	}
 
-	switch(this.props.clickedCover){
+	switch(this.props.cover){
 
 		case '2020':
 			spotifyLink = 'https://open.spotify.com/track/1aliVNcHyuAPbLEuoZ6BTx?si=ATXLe0d7Rx6wgM2zCaVbsg';
@@ -85,6 +143,7 @@ export default class MusicModal extends Component {
 			color = {
 				color: '#ffc4b2',
 			}
+			break;
 		case 'SPICE':
 			spotifyLink = 'https://open.spotify.com/track/76Lejrx3yj7Mekl2PdqrOo?si=8430a0659a244460';
 			itunesLink = 'https://music.apple.com/us/album/spice/1639904717?i=1639904741';
@@ -100,7 +159,7 @@ export default class MusicModal extends Component {
 			youtubeLink = 'https://youtu.be/-FFPe-DcuJQ';
 			soundcloudLink = 'https://soundcloud.com/bungalocollective/greener-final';
 			color = {
-				color: '#0cf54a',
+				color: '#95eaf5',
 			}
 			break;
 		case 'Plazma':
@@ -109,7 +168,7 @@ export default class MusicModal extends Component {
 			youtubeLink = 'https://youtu.be/YKxEl6Dfqvg';
 			soundcloudLink = 'https://soundcloud.com/bungalocollective/sets/plazma-ep/s-Iqm7YzrZhul?si=c6db351f193b461b995ddc45f5dba4c6&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing';
 			color = {
-				color: '#95eaf5',
+				color: '#21e1eb',
 			}
 			break;
 		default:
@@ -118,40 +177,29 @@ export default class MusicModal extends Component {
 
 	return (
 		<>
-			<div className='coverContainer'>
-
-				<SingleCover cname='main-image' cover={this.props.clickedCover} fullRes={true}/>
-				
-				<div className='hide'>
-
-					<h1 style={color}>{this.props.title}</h1>
-					<div className='grid-modal fa-style'>
-						<a class="fa-link-container" href={spotifyLink} target="_blank" style={color}>
-							<FontAwesomeIcon icon={faSpotify} />
-						</a>
-						<a class="fa-link-container" href={itunesLink} target="_blank" style={color}>
-							<FontAwesomeIcon icon={faItunesNote} />
-						</a>
-						<a class="fa-link-container" href={youtubeLink} target="_blank" style={color}>
-							<FontAwesomeIcon icon={faYoutube} />
-						</a>
-						<a class="fa-link-container" href={soundcloudLink} target="_blank" style={color}>
-							<FontAwesomeIcon icon={faSoundcloud} />
-						</a>
-					</div> 
-
+			<div className='sc-container'>
+				<img className={this.props.cname} src={coverSrc}></img>
+				<div className='grid-mobile-links query-mobile-grid hide-mobile fa-style-mobile'>
+					<a class="fa-link-container" href={spotifyLink} target="_blank" style={color}>
+						<FontAwesomeIcon icon={faSpotify} />
+					</a>
+					<a class="fa-link-container" href={itunesLink} target="_blank" style={color}>
+						<FontAwesomeIcon icon={faItunesNote} />
+					</a>
+					<a class="fa-link-container" href={youtubeLink} target="_blank" style={color}>
+						<FontAwesomeIcon icon={faYoutube} />
+					</a>
+					<a class="fa-link-container" href={soundcloudLink} target="_blank" style={color}>
+						<FontAwesomeIcon icon={faSoundcloud} />
+					</a>
 				</div>
-				<h2 style={color}>RELEASED: {this.props.released}</h2>
-				
 			</div>
 		</>
 	)
-
   }
 }
 
-MusicModal.propTypes = {
-	title: PropTypes.string,
-	clickedCover: PropTypes.string,
-	released: PropTypes.string
+SingleCover.propTypes = {
+	cover: PropTypes.string,
+	fullRes: PropTypes.bool
 };
