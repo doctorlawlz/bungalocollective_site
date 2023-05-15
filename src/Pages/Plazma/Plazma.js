@@ -1,8 +1,8 @@
 import React from 'react';
 import './Plazma.css';
 import '../BrickbyBrick/BrickbyBrick.css';
-import plama from '../../Site_Assets/Spinning_Brick.webm';
-import plazmaFisheye from '../../Site_Assets/PNGS/plazma_fisheye.png';
+import plazma from '../../Site_Assets/Spinning_Brick.webm';
+import plazmaFisheye from '../../Site_Assets/PNGS/plazma-fisheye.png';
 import SingleCover from '../../Components/SingleCover/SingleCover';
 import MusicModal from '../../Components/MusicModal/MusicModal';
 import { motion, AnimatePresence } from 'framer-motion';
