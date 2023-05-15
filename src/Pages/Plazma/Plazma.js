@@ -1,6 +1,6 @@
 import React from 'react';
 import './Plazma.css';
-import '../BrickbyBrick/BrickbyBrick.css';
+import '../../Components/ReleasePageFormat/ReleasePage.css';
 import plazma from '../../Site_Assets/Spinning_Brick.webm';
 import plazmaFisheye from '../../Site_Assets/PNGS/plazma-fisheye.png';
 import SingleCover from '../../Components/SingleCover/SingleCover';
@@ -71,12 +71,12 @@ const Plazma = () => {
         </div>
       </div>
       
-      <div className='grid-bbb'>
+      <div className='preclick-modal'>
         <a onClick={() => { 
           setOpenModal(true); 
           updateModalProps('Plazma', 'Plazma', '05/05/23')
         }}>
-            <SingleCover cname='grid-item-bbb' cover='Plazma'/></a>
+            <SingleCover cname='clicked-modal' cover='Plazma'/></a>
       </div>
 
       {/* Opens modal whenever art is clicked on desktop*/}

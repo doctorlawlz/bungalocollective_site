@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../Components/ReleasePageFormat/ReleasePage.css';
 import './BrickbyBrick.css';
 import spinningBrick from '../../Site_Assets/Spinning_Brick.webm';
 import spinningBrickApple from '../../Site_Assets/Spinning_Brick_Apple.mp4';
@@ -76,12 +77,12 @@ const BrickbyBrick = () => {
         </div>
       </div>
       
-      <div className='grid-bbb'>
+      <div className='preclick-modal'>
         <a onClick={() => { 
           setOpenModal(true); 
           updateModalProps('Brick By Brick', 'BBB', '06/03/22')
         }}>
-            <SingleCover cname='grid-item-bbb' cover='BBB'/></a>
+            <SingleCover cname='clicked-modal' cover='BBB'/></a>
       </div>
 
       {/* Opens modal whenever art is clicked on desktop*/}
