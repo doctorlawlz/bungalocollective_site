@@ -178,7 +178,10 @@ export default class SingleCover extends Component {
 	return (
 		<>
 			<div className='sc-container'>
-				<img className={this.props.cname} src={coverSrc}></img>
+				<img 
+				className={`${this.props.cname} pop-out-image`} 
+				src={coverSrc}
+				></img>
 				<div className='grid-mobile-links query-mobile-grid hide-mobile fa-style-mobile'>
 					<a class="fa-link-container" href={spotifyLink} target="_blank" style={color}>
 						<FontAwesomeIcon icon={faSpotify} />

@@ -26,7 +26,7 @@ const Home = () => {
         animate={{opacity: 1}}
         exit={{opacity: 0}}
       >
-        {/*
+{/*         
           <div class="dancing-bungaboys">
             <img src={chrisDance} style={{ marginRight: '1%', height: '49%'}} />
             <img src={danDance}style={{ height: '51%'}} />
@@ -47,7 +47,7 @@ const Home = () => {
             </div>
             <div className="flex-grid">
               <NavButton label="BRICK BY BRICK" icon='brickIcon' link="/brickbybrick" style="brick"/>
-              <NavButton label="STORE" icon='merchIcon' link="/" style="merch"/>
+              <NavButton label="STORE" icon='merchIcon' link="/store" style="store"/>
             </div>
           </div>
 
