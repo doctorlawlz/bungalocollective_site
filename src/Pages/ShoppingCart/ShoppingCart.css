@@ -33,7 +33,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid black; */
+    border: 1px solid white;
     margin: 20px;
     /* padding: 10px; */
     border-radius: 20px;
@@ -42,10 +42,11 @@
 }
 
 .button {
-    border-radius: 20px;
+    border-radius: 10px;
     border: none;
     padding: 8px 17px 8px 17px;
     font-size: 15px;
+    margin: 10px;
 }
 .map-cart-items {
     display: grid;

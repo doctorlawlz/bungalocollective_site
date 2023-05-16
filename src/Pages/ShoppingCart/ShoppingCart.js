@@ -8,8 +8,19 @@ const ShoppingCart = (props) => {
     const {shoppingCartArr, setShoppingCartArr} = props;
 
     const [cartItemCount, setCartItemCount] = useState({});
-    const [shoppingCartSet, setShoppingCartSet] = useState();
     const [cartDisplayItems, setCartDisplayItems] = useState([])
+
+    const removeOneFromCart = (e) => {
+        const itemId = e.target.value
+        const tempArr = [...shoppingCartArr]
+        for (let i = 0; i < shoppingCartArr.length; i ++) {
+            if (shoppingCartArr[i].id == itemId) {
+                tempArr.splice(i, 1)
+                break
+            }
+        }
+        setShoppingCartArr([...tempArr])
+    }
 
     const removeFromCart = (e) => {
         const itemId = e.target.value
@@ -59,13 +70,16 @@ const ShoppingCart = (props) => {
                     <h3 className="cart-item-name">{cartItem.name}</h3>
                     <h4 className="cart-item-quantity">Quantity: {cartItemCount[cartItem.id]}</h4>
                     <h4 className="cart-item-price">Price:</h4>
-                    <button className="button" value={cartItem.id} onClick={removeFromCart}>Remove</button>
+                    <div>
+                        <button className="button" value={cartItem.id} onClick={removeFromCart}>Remove All</button>
+                        <button className="button" value={cartItem.id} onClick={removeOneFromCart}>Remove One</button>
+                    </div>
                 </div>
             </div>
         )
     })
 
-    
+    console.log(shoppingCartArr)
 
     return (
         <div>
