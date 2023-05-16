@@ -1,0 +1,23 @@
+.item-info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px;
+    padding: 50px;
+}
+
+.store-item-text-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    /* padding: 50px; */
+    border: 1px solid black;
+}
+
+.store-item-info-name, .store-item-info-description, .store-item-info-price {
+    text-align: center;
+}
+
+.store-item-info-image {
+    width: 200px;
+    height: auto;
+}

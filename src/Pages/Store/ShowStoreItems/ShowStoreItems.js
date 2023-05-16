@@ -14,8 +14,11 @@ const ShowStoreItems = (props) => {
     })
 
     return(
-        <div className="map-store-item">
-            {storeItemList}
+        <div>
+            <h1 className="store-header">Welcome to da store</h1>
+            <div className="map-store-item">
+                {storeItemList}
+            </div>
         </div>
     )
 }
