@@ -84,6 +84,7 @@ const ShoppingCart = (props) => {
     return (
         <div>
             <h1 className="shopping-cart-header">Your Shopping Cart</h1>
+            <h3 className="cart-quantity-message">You have {shoppingCartArr.length} items in your cart!</h3>
             <div className="remove-all-button-container">
                 {shoppingCartArr.length > 1 ? <button className="button" onClick={removeAllFromCart}>Remove All Items</button>: ''}
             </div>

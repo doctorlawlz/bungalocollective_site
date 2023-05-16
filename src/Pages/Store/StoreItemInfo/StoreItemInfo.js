@@ -18,7 +18,7 @@ const StoreItemInfo = (props) => {
                     <h1 className="store-item-info-name">{storeItem.name}</h1>
                     <p className="store-item-info-description">{storeItem.description}</p>
                     <p className="store-item-info-price">Price: {storeItem.price}</p>
-                    <button className="add-button" onClick={pushToCartArr}>{shoppingCartArr.includes(storeItem) ? 'Added to cart!' : ' Add to cart'}</button>
+                    <button className="add-button" onClick={pushToCartArr}>{shoppingCartArr.includes(storeItem) ? 'Item in cart! Add more?' : 'Add to cart'}</button>
                 </div>
             </div>
         </div>

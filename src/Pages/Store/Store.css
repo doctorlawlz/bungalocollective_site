@@ -36,4 +36,10 @@
     text-decoration: none;
 }
 
+.cart-quantity-message {
+    color: white;
+    text-align: center;
+    margin: 50px;
+}
+
 
