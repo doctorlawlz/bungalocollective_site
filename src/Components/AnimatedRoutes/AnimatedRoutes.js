@@ -7,25 +7,14 @@ import ShowStoreItems from '../../Pages/Store/ShowStoreItems/ShowStoreItems';
 import StoreItemInfo from '../../Pages/Store/StoreItemInfo/StoreItemInfo';
 import ShoppingCart from '../../Pages/ShoppingCart/ShoppingCart'
 import { Routes, Route, useLocation } from 'react-router-dom';
-import {useState, useEffect} from 'react';
 
 import { AnimatePresence } from 'framer-motion'
 
-function AnimatedRoutes() {
+function AnimatedRoutes(props) {
+
+  const {storeItems, shoppingCartArr, setShoppingCartArr} = props;
 
   const location = useLocation();
-
-  const [storeItems, setStoreItems] = useState([]);
-  const [shoppingCartArr, setShoppingCartArr] = useState([]);
-
-  useEffect(() => {
-      fetch("https://api.punkapi.com/v2/beers?page=1&per_page=8")
-      .then ((response) => {
-        return response.json()
-      }) .then((data) => {
-            setStoreItems(data)
-      })
-  }, [])
 
   const renderItemInfo = storeItems.map((item) => {
     return(
