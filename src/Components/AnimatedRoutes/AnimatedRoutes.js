@@ -16,15 +16,14 @@ function AnimatedRoutes() {
 
   const [storeItems, setStoreItems] = useState([]);
 
-  const getItems = () => {
-    fetch("https://api.punkapi.com/v2/beers?page=1&per_page=8")
-    .then ((response) => {
-      return response.json()
-    }) .then((data) => {
-          setStoreItems(data)
-    })}
-
-  useEffect(getItems, [])
+  useEffect(() => {
+      fetch("https://api.punkapi.com/v2/beers?page=1&per_page=8")
+      .then ((response) => {
+        return response.json()
+      }) .then((data) => {
+            setStoreItems(data)
+      })
+  }, [])
 
   return (
     <AnimatePresence>
