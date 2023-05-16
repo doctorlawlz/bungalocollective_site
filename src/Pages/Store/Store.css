@@ -1,10 +1,10 @@
  .store-header {
     text-align: center;
+    color: white;
 }
 .map-store-item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
 }
 
 .store-item-container {
@@ -21,12 +21,14 @@
 }
 
 .store-item-image {
-    width: 65px;
-    height: auto;
+    width: auto;
+    height: 200px;
 }
 
 .store-item-name {
     font-size: 25px;
+    color: aliceblue;
+    text-decoration: underline;
 }
 
 

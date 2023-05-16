@@ -12,7 +12,7 @@ const App = () => {
 
   const [storeItems, setStoreItems] = useState([]);
   const [shoppingCartArr, setShoppingCartArr] = useState([]);
-  
+
   const location = useLocation();
 
   const backgroundClass = location.pathname === '/plazma'
@@ -37,7 +37,7 @@ const App = () => {
   }, [])
 
   return (
-    <>
+    <main>
         <motion.div 
           className={backgroundClass}
           
@@ -49,13 +49,15 @@ const App = () => {
         <Link to="/">
           <img src={logo} className='logo color-overlay' alt='logo'></img>
         </Link>
-        <Link to="/cart"><button>da shopping cart</button></Link>
-        <Link to="/store"><button>da store</button></Link>
+        <div className="merch-button-container">
+          <Link to="/cart"><button className="merch-button">da shopping cart</button></Link>
+          <Link to="/store"><button className="merch-button">da store</button></Link>
+        </div>
         <AnimatedRoutes 
           storeItems={storeItems}
           shoppingCartArr={shoppingCartArr}
           setShoppingCartArr={setShoppingCartArr}/>
-    </> 
+    </main> 
   );
 }
 

@@ -85,6 +85,18 @@
   animation: colorCycle 5s infinite;
 }
 
+.merch-button {
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+}
+
+.merch-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
  /* Define the keyframes for the color cycling animation */
  @keyframes colorCycle {
   0% {

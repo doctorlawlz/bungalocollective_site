@@ -13,20 +13,27 @@ const ShoppingCart = (props) => {
 
     const mappedShoppingCartItems = shoppingCartArr.map((cartItem) => {
         return(
-            <div>
+            <div className="cart-item-container">
                 <Link to={`/store/${cartItem.id}`}>
-                    <img src={cartItem.image_url} alt={cartItem.name}></img>
+                    <img className="cart-item-image" src={cartItem.image_url} alt={cartItem.name}></img>
                 </Link>
-                <h2>{cartItem.name}</h2>
-                <h3>Quantity: </h3>
-                <button onClick={removeFromCart}>Remove from cart</button>
+                <div className="cart-item-text">
+                    <h3 className="cart-item-name">{cartItem.name}</h3>
+                    <h4 className="cart-item-quantity">Quantity: </h4>
+                    <h4 className="cart-item-price">Price:</h4>
+                    <button className="remove-button" onClick={removeFromCart}>Remove from cart</button>
+                </div>
             </div>
         )
     })
 
     return (
         <div>
-            {mappedShoppingCartItems}
+            <h1 className="shopping-cart-header">Your Shopping Cart</h1>
+            {shoppingCartArr.length < 1 ? <h3 className="empty-cart-message">Ruh Roh, your shopping cart is empty!</h3> : ''}
+            <div className="map-cart-items">
+                {mappedShoppingCartItems}
+            </div>
         </div>
     )
 }
