@@ -1,0 +1,32 @@
+ .store-header {
+    text-align: center;
+}
+.map-store-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.store-item-container {
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+    height: 325px;
+    width: auto;
+}
+
+.store-item-image {
+    width: 65px;
+    height: auto;
+}
+
+.store-item-name {
+    font-size: 25px;
+}
+
+

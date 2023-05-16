@@ -4,11 +4,13 @@ import Music from '../../Pages/Music/Music';
 import BrickbyBrick from '../../Pages/BrickbyBrick/BrickbyBrick';
 import Plazma from '../../Pages/Plazma/Plazma';
 import Store from '../../Pages/Store/Store';
+import StoreItemInfo from '../../Pages/Store/StoreItemInfo/StoreItemInfo';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 import { AnimatePresence } from 'framer-motion'
 
 function AnimatedRoutes() {
+
   const location = useLocation();
 
   return (
@@ -16,9 +18,10 @@ function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />}  />
         <Route path="/music" element={<Music />} />
-        <Route path="brickbybrick" element={<BrickbyBrick/>} />
-        <Route path="plazma" element={<Plazma/>} />
-        <Route path="store" element={<Store/>}/>
+        <Route path="/brickbybrick" element={<BrickbyBrick/>} />
+        <Route path="/plazma" element={<Plazma/>} />
+        <Route path="/store/*" element={<Store/>}/>
+        <Route path="/store/:name" element={<StoreItemInfo/>}/>
       </Routes>
     </AnimatePresence>
   )

@@ -66,16 +66,16 @@ const BrickbyBrick = () => {
             <source src={spinningBrick} type="video/webm"/>
         </video> 
       </div>
-      <div className='video-wrapper-mv'>
-        <div className='video-container-mv'>
-          <iframe src="https://www.youtube.com/embed/xF6HeArOrjA?rel=0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div className='video-wrapper-mv'>
+          <div className='video-container-mv'>
+            <iframe src="https://www.youtube.com/embed/xF6HeArOrjA?rel=0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
-      </div>
-      <div className='video-wrapper'>
-        <div className='video-container'>
-          <iframe src="https://www.youtube.com/embed/2NK76pAxopc?rel=0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div className='video-wrapper'>
+          <div className='video-container'>
+            <iframe src="https://www.youtube.com/embed/2NK76pAxopc?rel=0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
-      </div>
       
       <div className='preclick-modal'>
         <a onClick={() => { 
