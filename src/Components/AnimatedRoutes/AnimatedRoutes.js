@@ -27,6 +27,16 @@ function AnimatedRoutes() {
       })
   }, [])
 
+  const renderItemInfo = storeItems.map((item) => {
+    return(
+      <Route path={`/store/${item.id}`} element={<StoreItemInfo
+          shoppingCartArr={shoppingCartArr}
+          setShoppingCartArr={setShoppingCartArr}
+          storeItem={item}/>}>
+      </Route>
+    )
+  })
+
   return (
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
@@ -34,10 +44,7 @@ function AnimatedRoutes() {
         <Route path="/music" element={<Music />} />
         <Route path="/brickbybrick" element={<BrickbyBrick/>} />
         <Route path="/plazma" element={<Plazma/>} />
-        <Route path="/store/:id" element={<StoreItemInfo 
-          storeItems={storeItems} 
-          shoppingCartArr={shoppingCartArr}
-          setShoppingCartArr={setShoppingCartArr}/>}/>
+        {renderItemInfo}
         <Route path="/store/*" element={<ShowStoreItems storeItems = {storeItems}/>}/>
         <Route path="/cart" element={<ShoppingCart
           shoppingCartArr={shoppingCartArr}

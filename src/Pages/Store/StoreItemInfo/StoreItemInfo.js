@@ -1,29 +1,8 @@
 import "./StoreItemInfo.css";
-import ShoppingCart from "../../ShoppingCart/ShoppingCart";
-import {useParams} from 'react-router-dom';
-import {useState, useEffect} from 'react';
 
 const StoreItemInfo = (props) => {
-    
-    const {id} = useParams();
 
-    const {storeItems, shoppingCartArr, setShoppingCartArr} = props;
-
-    const [storeItem, setStoreItem] = useState('')
-
-    useEffect(() => {
-        for (let i = 0; i < storeItems.length; i ++) {
-            if (storeItems[i].id = id) {
-                setStoreItem(storeItems[i])
-            }
-        }
-    })
-
-    if (storeItem.length == '' ) {
-        return(
-            <p>Loading...</p>
-        )
-    }
+    const {storeItem, shoppingCartArr, setShoppingCartArr} = props;
 
     const pushToCartArr = () => {
         setShoppingCartArr(shoppingCartArr => [...shoppingCartArr, storeItem])
