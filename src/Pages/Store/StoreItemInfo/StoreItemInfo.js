@@ -1,16 +1,15 @@
 import "./StoreItemInfo.css";
+import ShoppingCart from "../../ShoppingCart/ShoppingCart";
 import {useParams} from 'react-router-dom';
 import {useState, useEffect} from 'react';
-import { Link } from "react-router-dom";
 
 const StoreItemInfo = (props) => {
     
     const {id} = useParams();
 
-    const {storeItems} = props;
+    const {storeItems, shoppingCartArr, setShoppingCartArr} = props;
 
     const [storeItem, setStoreItem] = useState('')
-    const [shoppingCartArr, setShoppingCartArr] = useState([])
 
     useEffect(() => {
         for (let i = 0; i < storeItems.length; i ++) {

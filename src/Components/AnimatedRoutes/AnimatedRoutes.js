@@ -16,6 +16,7 @@ function AnimatedRoutes() {
   const location = useLocation();
 
   const [storeItems, setStoreItems] = useState([]);
+  const [shoppingCartArr, setShoppingCartArr] = useState([]);
 
   useEffect(() => {
       fetch("https://api.punkapi.com/v2/beers?page=1&per_page=8")
@@ -33,9 +34,14 @@ function AnimatedRoutes() {
         <Route path="/music" element={<Music />} />
         <Route path="/brickbybrick" element={<BrickbyBrick/>} />
         <Route path="/plazma" element={<Plazma/>} />
-        <Route path="/store/:id" element={<StoreItemInfo storeItems={storeItems}/>}/>
+        <Route path="/store/:id" element={<StoreItemInfo 
+          storeItems={storeItems} 
+          shoppingCartArr={shoppingCartArr}
+          setShoppingCartArr={setShoppingCartArr}/>}/>
         <Route path="/store/*" element={<ShowStoreItems storeItems = {storeItems}/>}/>
-        <Route path="/cart" element={<ShoppingCart/>}></Route>
+        <Route path="/cart" element={<ShoppingCart
+          shoppingCartArr={shoppingCartArr}
+          setShoppingCartArr={setShoppingCartArr}/>}/>
       </Routes>
     </AnimatePresence>
   )

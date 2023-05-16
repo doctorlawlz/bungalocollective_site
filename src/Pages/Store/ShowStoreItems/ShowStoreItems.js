@@ -1,16 +1,8 @@
-import ShoppingCart from '../../ShoppingCart/ShoppingCart';
-import { useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import "../Store.css"
 
 const ShowStoreItems = (props) => {
     const {storeItems} = props;
-
-    // const [shoppingCartArr, setShoppingCartArr] = useState([])
-
-    // const pushToCartArr = () => {
-    //     setShoppingCartArr(shoppingCartArr => [...shoppingCartArr, item])
-    // }
 
     const storeItemList = storeItems.map((storeItem) => {
         return(
@@ -19,7 +11,6 @@ const ShowStoreItems = (props) => {
                     <h1 className="store-item-name">{storeItem.name}</h1>
                     <img className="store-item-image" src={storeItem.image_url} alt={storeItem.name}/>
                 </Link>
-                <button>Add to cart</button>
             </div>
         )
     })
