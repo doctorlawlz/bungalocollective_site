@@ -5,6 +5,7 @@ import BrickbyBrick from '../../Pages/BrickbyBrick/BrickbyBrick';
 import Plazma from '../../Pages/Plazma/Plazma';
 import ShowStoreItems from '../../Pages/Store/ShowStoreItems/ShowStoreItems';
 import StoreItemInfo from '../../Pages/Store/StoreItemInfo/StoreItemInfo';
+import ShoppingCart from '../../Pages/ShoppingCart/ShoppingCart'
 import { Routes, Route, useLocation } from 'react-router-dom';
 import {useState, useEffect} from 'react';
 
@@ -34,6 +35,7 @@ function AnimatedRoutes() {
         <Route path="/plazma" element={<Plazma/>} />
         <Route path="/store/:id" element={<StoreItemInfo storeItems={storeItems}/>}/>
         <Route path="/store/*" element={<ShowStoreItems storeItems = {storeItems}/>}/>
+        <Route path="/cart" element={<ShoppingCart/>}></Route>
       </Routes>
     </AnimatePresence>
   )

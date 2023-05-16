@@ -32,6 +32,7 @@ const App = () => {
         <Link to="/">
           <img src={logo} className='logo color-overlay' alt='logo'></img>
         </Link>
+        <Link to="/cart"><button>da shopping cart</button></Link>
         <AnimatedRoutes />
     </> 
   );
