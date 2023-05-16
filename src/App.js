@@ -50,8 +50,8 @@ const App = () => {
           <img src={logo} className='logo color-overlay' alt='logo'></img>
         </Link>
         <div className="merch-button-container">
-          <Link to="/cart"><button className="merch-button">da shopping cart</button></Link>
-          <Link to="/store"><button className="merch-button">da store</button></Link>
+          <Link to="/cart"><button className="merch-button">Cart</button></Link>
+          <Link to="/store"><button className="merch-button">Store</button></Link>
         </div>
         <AnimatedRoutes 
           storeItems={storeItems}

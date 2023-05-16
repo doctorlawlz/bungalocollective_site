@@ -9,6 +9,7 @@ const ShowStoreItems = (props) => {
                 <Link to={`/store/${storeItem.id}`} className="store-item-container">
                     <h1 className="store-item-name">{storeItem.name}</h1>
                     <img className="store-item-image" src={storeItem.image_url} alt={storeItem.name}/>
+                    <h3 className="store-item-price">Price:</h3>
                 </Link>
         )
     })

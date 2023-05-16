@@ -16,7 +16,7 @@
     align-items: center;
     margin: 15px;
     padding: 10px;
-    height: 325px;
+    height: 315px;
     width: auto;
 }
 
@@ -26,9 +26,14 @@
 }
 
 .store-item-name {
-    font-size: 25px;
+    font-size: 20px;
     color: aliceblue;
     text-decoration: underline;
+}
+
+.store-item-price {
+    color: white;
+    text-decoration: none;
 }
 
 
