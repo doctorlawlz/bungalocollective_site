@@ -85,12 +85,15 @@ const ShoppingCart = (props) => {
         <div>
             <h1 className="shopping-cart-header">Your Shopping Cart</h1>
             <h3 className="cart-quantity-message">You have {shoppingCartArr.length} items in your cart!</h3>
-            <div className="remove-all-button-container">
-                {shoppingCartArr.length > 1 ? <button className="button" onClick={removeAllFromCart}>Remove All Items</button>: ''}
+            <div className="button-container">
+                {shoppingCartArr.length > 0 ? <button className="button" onClick={removeAllFromCart}>Remove All Items</button>: ''}
             </div>
             {shoppingCartArr.length < 1 ? <h3 className="empty-cart-message">Ruh Roh, your shopping cart is empty!</h3> : ''}
             <div className="map-cart-items">
                 {mappedShoppingCartItems}
+            </div>
+            <div className="button-container">
+                <button className="button">Finish & Pay</button>
             </div>
         </div>
     )
